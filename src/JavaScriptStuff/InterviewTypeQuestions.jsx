@@ -120,14 +120,45 @@ const InterviewTypeQuestions = () => {
   const names = ["Neeraj", "Suraj", "Allu"]
   const idx = names.indexOf["Aditya"]
   console.log("idx", idx)
+
+
+
+
+  // Print numbers in 1 by 1
+for (let a = 0; a <= 5; a++){
+  setTimeout(() => {
+    console.log("Number",a)
+  }, a * 1000);
+}
   
+    
+
+    // checkArray
+    const checkArray = [1, 2, 3, 4, 5]
+  console.log("checkArray", Array.isArray(checkArray))
+  
+
+
+
+
+  // NAN
+  let a = 10;
+  // let b = "10"
+  let c = "String"
+  let d = a / c
+  console.log("NAN", d)
+  // Becuase koi bhi number kisi string se devide nhi ho sakta
+  
+
+
+
   
 
 
 
   return (
     <div>
-      <h4>InterviewTypeQuestions</h4>
+      {/* <h4>InterviewTypeQuestions</h4> */}
     </div>
   )
 }

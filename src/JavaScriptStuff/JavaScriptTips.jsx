@@ -58,7 +58,34 @@ const JavaScriptTips = () => {
   console.log("myNumber", myNumber);
   console.log("myNumber1", myNumber1);
   // Nulish
+
+
+
+// Window.Open
   
+  function windowOpenn() {
+    window.open("https://surajyadav.vercel.app/","","widht=500px, height=200px")
+  }
+
+
+
+  // Location
+  console.log("Locationn", window.location)
+  
+  
+
+  // History
+  console.log("Historyy", window.history.location)
+
+
+
+  
+
+
+
+
+
+
   
   
   
@@ -67,6 +94,7 @@ const JavaScriptTips = () => {
   return (
     <div>
       <h6>JavaScriptTips</h6>
+      <button onClick={windowOpenn}>New window Open</button>
     </div>
   );
 };
