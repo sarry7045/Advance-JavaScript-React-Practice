@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const JavaScriptTips = () => {
 
@@ -46,7 +46,6 @@ const JavaScriptTips = () => {
   
   
   
-  
   // Nulish
   const myValue = "";
   const myNumber = myValue || 10;
@@ -71,30 +70,52 @@ const JavaScriptTips = () => {
 
   // Location
   console.log("Locationn", window.location)
-  
+
   
 
   // History
   console.log("Historyy", window.history.location)
 
 
+  
+  // Convert String to Number and Number to String
+  const theString = "12345"
+  console.log("theString", +theString)
 
   
 
+  
+  // Get Location
+  const getLocation = () => {
+    try {
+      navigator.geolocation.getCurrentPosition(position => {
+        const { latitude, longitude } = position.coords
+        console.log("latitude, longitude",latitude, longitude)
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  console.log("window Location", window.navigator.ge)
+
+  useEffect(() => {
+    getLocation()
+  })
 
 
 
-
+  // console in better format
+  const dataa = [{ "City": "Mumbai"}, {"City":"Banglore"},{"City":"Hyderabad"}]
+  console.table(dataa)
 
   
-  
-  
-  
+
 
   return (
     <div>
       <h6>JavaScriptTips</h6>
       <button onClick={windowOpenn}>New window Open</button>
+      <button onClick={getLocation()}>Location Permission</button>
     </div>
   );
 };

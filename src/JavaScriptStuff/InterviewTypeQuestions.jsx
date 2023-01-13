@@ -148,6 +148,14 @@ for (let a = 0; a <= 5; a++){
   let d = a / c
   console.log("NAN", d)
   // Becuase koi bhi number kisi string se devide nhi ho sakta
+
+
+
+  
+  // Find smallest and largest nujmber
+  const arry = [2, 23, 65, 3, 43]
+  arry.reduce((accum, num) => Math.min(accum, num))
+  console.log("Small Number",arry)
   
 
 
@@ -158,7 +166,7 @@ for (let a = 0; a <= 5; a++){
 
   return (
     <div>
-      {/* <h4>InterviewTypeQuestions</h4> */}
+      <h4>InterviewTypeQuestions</h4>
     </div>
   )
 }

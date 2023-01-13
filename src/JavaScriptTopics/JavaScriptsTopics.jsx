@@ -7,6 +7,8 @@ import Closure from "./Closure";
 import DeepShallowCopy from "./DeepShallowCopy";
 import FunctionCurrying from "./FunctionCurrying";
 import HigherOrderFunction from "./HigherOrderFunction";
+import EventDelegation from "./EventDelegation";
+// import EventBublingCapturing from "./EventBublingCapturing";
 
 const JavaScripts = () => {
   return (
@@ -19,6 +21,8 @@ const JavaScripts = () => {
       <DeepShallowCopy />
       <FunctionCurrying />
       <HigherOrderFunction />
+      <EventDelegation />
+      {/* <EventBublingCapturing /> */}
     </div>
   );
 };

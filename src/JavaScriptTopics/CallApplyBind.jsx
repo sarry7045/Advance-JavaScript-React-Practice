@@ -15,7 +15,16 @@ const CallApplyBind = () => {
     roll: 21,
   };
   callApppBind.call(user, "Amboli", "20");
-  return <div></div>;
+  callApppBind.apply(user, ["Amboli", "20"]);
+  // apply k case me bass extra values ko aaray me send krna hoota hai
+  const pirntValues = callApppBind.bind(user, ["Amboli", "20"]);
+  console.log("pirntValues", pirntValues);
+  pirntValues()
+  return (
+    <div>
+      <h4>CallApplyBind</h4>
+    </div>
+  );
 };
 
 export default CallApplyBind;

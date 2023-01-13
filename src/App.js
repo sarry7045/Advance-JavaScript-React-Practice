@@ -4,6 +4,9 @@ import JavaScriptTips from "./JavaScriptStuff/JavaScriptTips.jsx";
 import JavaScriptsTopics from "./JavaScriptTopics/JavaScriptsTopics.jsx";
 import LessCodeTips from "./JavaScriptStuff/LessCodeTips.jsx";
 import InterviewTypeQuestions from "./JavaScriptStuff/InterviewTypeQuestions.jsx";
+import Debouncing from "./JavaScriptTopics/Debouncing.jsx";
+import LocalStorage from "./JavaScriptTopics/LocalStorage.jsx";
+import EventBublingCapturing from "./JavaScriptTopics/EventBublingCapturing.jsx";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/LessCodeTips" element={<LessCodeTips />} />
         <Route path="/InterviewTypeQuestions" element={<InterviewTypeQuestions />} />
         <Route path="/JavaScriptsTopics" element={<JavaScriptsTopics />} />
+        <Route path="/Debouncing" element={<Debouncing />} />
+        <Route path="/LocalStorage" element={<LocalStorage />} />
+        <Route path="/EventBublingCapturing" element={<EventBublingCapturing />} />
       </Routes>
     </Router>
   );
