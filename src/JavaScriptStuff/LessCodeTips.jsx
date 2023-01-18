@@ -132,13 +132,6 @@ const LessCodeTips = () => {
     
 
 
-
-
-    
-    
-    // Diffrece between document and window
-    
-
   return (
     <div>
           <h4>LessCodeTips</h4>

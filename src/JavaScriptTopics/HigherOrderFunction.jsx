@@ -5,15 +5,21 @@ const HigherOrderFunction = () => {
   //     1st Function me main logic rahaega and seccond me usko as a parameter leke 2 num  k paramtere paas kareneg and
   //     then jaha calll krna hoga so main function ko usme wo logic wala function and rela number paas kar denge as a parameter
 
+
+  // Aise function jo kisi dusre function ko as a argument accept karte ho - HOF
+  // Aise function jo kisi dusre function k undar as a argument paas hote ho - CallBack Fucntion
+
   // Example 1
 
   const summ = (a, b) => {
     return a + b;
   };
+  // This is callBack function
 
   function combinee(num1, num2, logical) {
     return logical(num1, num2);
   }
+  // This is higher orderFunction
 
   console.log("HigherOrderFunction", combinee(10, 15, summ));
 

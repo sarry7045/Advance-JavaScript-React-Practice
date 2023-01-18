@@ -8,6 +8,10 @@ import DeepShallowCopy from "./DeepShallowCopy";
 import FunctionCurrying from "./FunctionCurrying";
 import HigherOrderFunction from "./HigherOrderFunction";
 import EventDelegation from "./EventDelegation";
+import Debouncing from "./Debouncing";
+import LocalStorage from "./LocalStorage";
+import WindowProperties from "./WindowProperties";
+import DocumentProperties from "./DocumentProperties";
 // import EventBublingCapturing from "./EventBublingCapturing";
 
 const JavaScripts = () => {
@@ -22,6 +26,10 @@ const JavaScripts = () => {
       <FunctionCurrying />
       <HigherOrderFunction />
       <EventDelegation />
+      <Debouncing />
+      <LocalStorage />
+      <WindowProperties />
+      <DocumentProperties />
       {/* <EventBublingCapturing /> */}
     </div>
   );

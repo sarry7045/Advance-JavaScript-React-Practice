@@ -29,7 +29,7 @@ const InterviewTypeQuestions = () => {
     numbers.forEach((item) => {
         sum += item
     })
-  console.log("sum", sum)
+    console.log("sum", sum)
   
 
 
@@ -155,7 +155,12 @@ for (let a = 0; a <= 5; a++){
   // Find smallest and largest nujmber
   const arry = [2, 23, 65, 3, 43]
   arry.reduce((accum, num) => Math.min(accum, num))
-  console.log("Small Number",arry)
+  console.log("Small Number", arry)
+  
+
+  let pattern = "/xyz"
+  let value = "This is XYZ test"
+  console.log("Valueee", value.replace(pattern, "just"))
   
 
 
@@ -166,7 +171,7 @@ for (let a = 0; a <= 5; a++){
 
   return (
     <div>
-      <h4>InterviewTypeQuestions</h4>
+      {/* <h4>InterviewTypeQuestions</h4> */}
     </div>
   )
 }
