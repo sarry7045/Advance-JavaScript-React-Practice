@@ -12,6 +12,10 @@ import Debouncing from "./Debouncing";
 import LocalStorage from "./LocalStorage";
 import WindowProperties from "./WindowProperties";
 import DocumentProperties from "./DocumentProperties";
+import SpreadRestOperator from "./SpreadRestOperator";
+import JavaScriptEvents from "./JavaScriptEvents";
+import Prototype from "./Prototype";
+import RecurisveFunction from "./RecurisveFunction";
 // import EventBublingCapturing from "./EventBublingCapturing";
 
 const JavaScripts = () => {
@@ -30,6 +34,10 @@ const JavaScripts = () => {
       <LocalStorage />
       <WindowProperties />
       <DocumentProperties />
+      <SpreadRestOperator />
+      <JavaScriptEvents />
+      <Prototype />
+      <RecurisveFunction />
       {/* <EventBublingCapturing /> */}
     </div>
   );

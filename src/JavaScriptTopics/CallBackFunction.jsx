@@ -1,7 +1,9 @@
 import React from "react";
 
 const CallBackFunction = () => {
-  // wo function jisme hum kiss ek function me dusre function ko as a argument pass krte hai
+
+  // Aise function jo kisi dusre function ko as a argument accept karte ho - Higher Order Function
+  // Aise function jo kisi dusre function k undar as a argument paas hote ho - CallBack Fucntion
 
   // Example 1
   function showw(number) {

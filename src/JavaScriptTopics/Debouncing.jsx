@@ -1,9 +1,9 @@
 import React from "react";
 
 const Debouncing = () => {
-  // suppose koi user kisi button pe 1 second pe multiple times click karta hai and ussi button pe multiple times api calls hore hai, then ussi chiz ko kamm
+  // Suppose koi user kisi button pe 1 second me multiple times click karta hai and ussi button pe multiple times api bhi calls hore hai, then ussi chiz ko stop
   // krne k liye hum debouncing use krte hai
-  // hum ek condition laga dete hai ki user button kitne baar bhi click kare but api call after every 3 seocond baad he hoga
+  // condition apply  -    ki user button kitne baar bhi click kare but api call after every harr 3 seocond baad he hoga
 
   let counter = 0;
 

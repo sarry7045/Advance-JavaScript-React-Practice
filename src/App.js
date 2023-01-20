@@ -1,13 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefaultPage from "./DefaultPage.jsx";
 import JavaScriptTips from "./JavaScriptStuff/JavaScriptTips.jsx";
-import JavaScriptsTopics from "./JavaScriptTopics/JavaScriptsTopics.jsx";
+import JavaScriptsTopics from "./JavaScriptTopics/JavaScriptsTopics.js";
 import LessCodeTips from "./JavaScriptStuff/LessCodeTips.jsx";
 import InterviewTypeQuestions from "./JavaScriptStuff/InterviewTypeQuestions.jsx";
-import EventBublingCapturing from "./JavaScriptTopics/EventBublingCapturing.jsx";
+// import EventBublingCapturing from "./JavaScriptTopics/EventBublingCapturing.jsx";
 import ReactHooks from "./ReactHooks/ReactHooks.jsx";
-import Search from "./ComponentsFunctionality/Search.jsx";
-import JavaScriptEvents from "./JavaScriptTopics/JavaScriptEvents.jsx";
 
 function App() {
   return (
@@ -21,13 +19,11 @@ function App() {
           element={<InterviewTypeQuestions />}
         />
         <Route path="/JavaScriptsTopics" element={<JavaScriptsTopics />} />
-        <Route
+        {/* <Route
           path="/EventBublingCapturing"
           element={<EventBublingCapturing />}
-        />
+        /> */}
         <Route path="/ReactHooks" element={<ReactHooks />} />
-        <Route path="/Search" element={<Search />} />
-        <Route path="/JavaScriptEvents" element={<JavaScriptEvents />} />
       </Routes>
     </Router>
   );
@@ -35,9 +31,22 @@ function App() {
 
 export default App;
 
-// Jitne bhi windows k properteis hote hai wo sabse pehle WEB APIS me jate hai then waha se
-// Like Example :- setTimeout, setInterval
+//  Topics Need to Learn Properly
 
-// Rest Operator and Spread Operator, Window and Document
+// Rest Operator and Spread Operator
+// Recursive Function
+// Prototype
+// Window - Location, Get Query string parameters, Redirect to a new URL, Navigator, Screen , History,
+// JavaScript Load Events, Load Unload , Page Unload
+// Javascript IndexDB
+// LocalStorage Advanced Tutorial
+// FormData
+// Drag and Drop API
+// FileReader API
+// JavaScript Geolocation
+// JavaScript Notification
+// JavaScript History pushState
+// PreventDefault
 
 // StoryBook, Jest-Testing Library
+// Strong TypeScript

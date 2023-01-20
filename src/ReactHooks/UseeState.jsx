@@ -3,19 +3,17 @@ import React, { useState } from "react";
 const UseeState = () => {
 
 
-
   // Exmaple 1
   const [number, setNumber] = useState(0);
   const Increase = () => {
     setNumber(number + 1);
   };
-  // Performance - isse kya hota hai ki state ki jo current value hai uske aage se wo continue krta hai
+    // Performance Improvement - Using prev param its continue with the previos value not initial value
   const asyncIncrease = () => {
     setTimeout(() => {
       setNumber((prev) => prev + 1);
     }, 2000);
   };
-    
     
     
 
@@ -32,7 +30,6 @@ const UseeState = () => {
   //     console.log("userr", user);
     
     
-    
 
   // Example 3
   const [details, setDetails] = useState({ firstName: "", lastName: "" });
@@ -40,24 +37,26 @@ const UseeState = () => {
   const changeDetails = (e) => {
     setDetails({ ...details, [e.target.name]: e.target.value });
   };
-    console.log("detailss", details);
-    
-
+  console.log("detailss", details);
 
   return (
-      <>
-          {/* Example 1 */}
+    <>
+      {/* Example 1 */}
       <h4>useState Hook</h4>
       <button onClick={Increase}> Increase</button>
       <button onClick={asyncIncrease}> Async Increase</button>
       <p>{number}</p>
 
-      {/* Example 2 */}
+      
+          
+        {/* Example 2 */}
       {/* <div>
         <input type="text" onChange={(e) => setInput(e.target.value)} />
         <button onClick={changeUser}> Change User</button>
         <h4>{user}</h4>
       </div> */}
+          
+
 
       {/* Example 3 */}
       <div>

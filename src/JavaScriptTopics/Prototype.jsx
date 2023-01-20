@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UseeRef = () => {
+const Prototype = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const UseeRef = () => {
   )
 }
 
-export default UseeRef
+export default Prototype

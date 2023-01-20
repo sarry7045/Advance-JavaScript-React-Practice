@@ -9,12 +9,10 @@ const UseeCallback = () => {
     //   Some Operation
   }, []);
 
-  // Suppose hume kisi specific state change pe ye function chalana hai uss case me hum ek dependency daal sakte hai
-
   return (
     <div>
       <Child someFunction={someFunction} count={count} />
-      {/* If hum child Component ko memo me rap krde toh baar baar click pe wo render nhi hooga but
+      {/* If hum child Component ko memo me rap krde toh baar baar click pe wo render nhi hooga but - 
           jese he hum child Component ko kuch props paas karenge wese he phirse wo re rendeer hona chalu ho jayga */}
       {/* usss case k liye hum useCallback use krte hai */}
       <h4> useCallback</h4>

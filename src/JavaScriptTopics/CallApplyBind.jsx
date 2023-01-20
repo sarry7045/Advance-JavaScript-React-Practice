@@ -1,8 +1,8 @@
 import React from "react";
 
 const CallApplyBind = () => {
-  // suppose kisi function me hamne 2 parameter paas kiya hai and ussi function me hame aur bhi 2 paramter chahiye jo dynamic aata ho
-  // uske liye hum call appyy or bind use krr sakte hai.CallApplyBind
+  // suppose kisi function me hamne 2 parameter paas kiya hai , and ussi function me hame aur bhi 2 paramter chahiye jo dynamic aata ho
+  // uske liye hum call apply or bind use krr sakte hai
 
   const callApppBind = function (address, room) {
     console.log(
@@ -20,6 +20,8 @@ const CallApplyBind = () => {
   const pirntValues = callApppBind.bind(user, ["Amboli", "20"]);
   console.log("pirntValues", pirntValues);
   pirntValues()
+
+
   return (
     <div>
       <h4>CallApplyBind</h4>

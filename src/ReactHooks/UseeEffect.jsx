@@ -10,8 +10,7 @@ const UseeEffect = () => {
     console.log("Created");
     window.addEventListener("resize", actualWidhth);
     return () => {
-      // useEffect me Return use krne se woh chizo ko phirse repeat krta hai like ek chiz create hogi toh uske turant baad wo usko delte kar dega jise mempory
-      // pe jada load nhi padega
+      // useEffect me Return use krne se woh chizo ko phirse repeat krta hai - Supposee setTimeout ko ek baar chalne k baad usko clear karna ho toh
       console.log("Deleted");
       window.removeEventListener("resize", actualWidhth);
     };

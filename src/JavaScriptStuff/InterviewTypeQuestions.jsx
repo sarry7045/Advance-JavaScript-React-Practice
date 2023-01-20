@@ -171,7 +171,7 @@ for (let a = 0; a <= 5; a++){
 
   return (
     <div>
-      {/* <h4>InterviewTypeQuestions</h4> */}
+      <h4>InterviewTypeQuestions</h4>
     </div>
   )
 }

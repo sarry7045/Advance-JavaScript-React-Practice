@@ -1,9 +1,6 @@
 import React from "react";
 
 const ArgumentObject = () => {
-  // Create a function jo hame multiple numbers add krke dede at that time we can use ArgumentObject
-  // Hum kisi function me paramter se bhi add karwa sakte hai but , jitna number of parameter paas karenge utna he quanitity add karr payenge
-
   function addtion(a, b) {
     return a + b;
   }

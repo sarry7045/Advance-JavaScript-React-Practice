@@ -8,7 +8,6 @@ root.render(
     <Suspense
       fallback={
         <div>
-          {" "}
           <h4> Loading...</h4>
         </div>
       }

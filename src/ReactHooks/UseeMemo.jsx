@@ -1,11 +1,12 @@
 import React, { useMemo, useState } from "react";
 
 const UseeMemo = () => {
-  // Suppose hum kisi ek page me multipe functions likh rahe hai and suppose 2nd function ka 4th function se koi lena dena nhi hai but woh
-  // function phir bhi call hoga hai because wo same page me hai but, usse performance issue hoga.
-  // usee rokne k liye hum useMemo use krte hai.
+  // Suppose hum kisi ek page me multipe functions likh rahe hai and 2nd function ka 4th function se koi connection nhi hai but phir bhi woh
+  // function call hota hai because wo same page me hai.
 
-  // dependncy me wo value rahega jiss value k change pe wo function call hona chahiye
+  // For Stoppng that unnecessary Calls we usign - useMemo
+
+  // dependncy me wo value rahega jiss value k change pe wo function call karna hai
 
   const [add, setAdd] = useState(0);
   const [sub, setSub] = useState(100);
