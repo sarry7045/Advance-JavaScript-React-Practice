@@ -1,6 +1,30 @@
-div{
+/* div{
     min-width: 100px;
     min-height: 100px;
     padding: 30px;
     border: 2px solid black;
+} */
+
+.imgBox {
+  background-image: url("https://images.pexels.com/photos/15151255/pexels-photo-15151255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  position: relative;
+  height: 125px;
+  width: 125px;
+  top: 15px;
+  right: -15px;
+  cursor: pointer;
+}
+.whiteBox {
+  height: 155px;
+  width: 155px;
+  margin: 10px;
+  background-color: black;
+  display: inline-block;
+}
+.hold{
+    border: solid red 4px;
+}
+
+.hide{
+    display: none;
 }

@@ -16,6 +16,12 @@ import SpreadRestOperator from "./SpreadRestOperator";
 import JavaScriptEvents from "./JavaScriptEvents";
 import Prototype from "./Prototype";
 import RecurisveFunction from "./RecurisveFunction";
+import IndexedDB from "./IndexedDB";
+import FormData from "./FormData";
+import DragAndDrop from "./DragAndDrop";
+import FileReader from "./FileReader";
+import Geolocation from "./Geolocation";
+import Notification from "./Notification";
 // import EventBublingCapturing from "./EventBublingCapturing";
 
 const JavaScripts = () => {
@@ -38,6 +44,12 @@ const JavaScripts = () => {
       <JavaScriptEvents />
       <Prototype />
       <RecurisveFunction />
+      <IndexedDB />
+      <FormData />
+      <DragAndDrop />
+      <FileReader />
+      <Geolocation />
+      <Notification />
       {/* <EventBublingCapturing /> */}
     </div>
   );

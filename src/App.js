@@ -33,20 +33,16 @@ export default App;
 
 //  Topics Need to Learn Properly
 
-// Rest Operator and Spread Operator
-// Recursive Function
-// Prototype
-// Window - Location, Get Query string parameters, Redirect to a new URL, Navigator, Screen , History,
-// JavaScript Load Events, Load Unload , Page Unload
-// Javascript IndexDB
-// LocalStorage Advanced Tutorial
 // FormData
 // Drag and Drop API
 // FileReader API
-// JavaScript Geolocation
-// JavaScript Notification
-// JavaScript History pushState
-// PreventDefault
 
-// StoryBook, Jest-Testing Library
-// Strong TypeScript
+// LocalStorage Advanced Tutorial
+
+// StoryBook, Jest-Testing Library, Strong TypeScript
+
+// Social Media App
+// E - Commerce App
+// Booking App
+// Messaging App
+// Video Streaming

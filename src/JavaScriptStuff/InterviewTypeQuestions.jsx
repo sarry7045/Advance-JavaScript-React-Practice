@@ -161,6 +161,24 @@ for (let a = 0; a <= 5; a++){
   let pattern = "/xyz"
   let value = "This is XYZ test"
   console.log("Valueee", value.replace(pattern, "just"))
+
+
+
+
+  // Block scope and Global Scope
+  var x = 10 
+  if (true) {
+    // var x = 5 
+    console.log(x)
+    // when let insted of var answer is 10
+  }
+  // x = 5
+  function summ() {
+    var x = 9
+    console.log(x)
+  }
+  summ()
+  // 10
   
 
 

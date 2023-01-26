@@ -104,7 +104,7 @@ const ArrayMethods = () => {
 
   // Include
   const fruits = ["Apple", "Mango", "Banana"]
-  const res = fruits?.includes("Apple")
+  const res = fruits?.includes("Apple") //Optional Chaining
   res ? console.log("Yess") : console.log("Nooo")
 
 

@@ -1,0 +1,8 @@
+1)   Can we use React Witout create-react-app  =  Mostly Probelry No 
+Because for Running React App We need some Setup like = ReactDOM , Babel, WebPack
+
+
+2)   JSX is one Type of JavaScript Object - Browser Read JSX using Transpilor (Babel)
+
+
+3)   Const hame Reasignment of Object se Bachata hai

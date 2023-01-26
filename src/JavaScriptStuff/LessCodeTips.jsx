@@ -116,7 +116,7 @@ const LessCodeTips = () => {
     }
     // const street = person && person.address && person.address.street
     // instead of this we code like this
-    const street = person?.address?.street
+    const street = person?.address?.street //Optional Chaining
     console.log("street", street)
     // Tip7
 
@@ -129,6 +129,24 @@ const LessCodeTips = () => {
     console.log("quanitity", quanitity)
     // if we dont want quanitity in string we can add + before value
     // Tip8
+  
+  
+  
+  
+  // Tip9
+  const canAcces = (userRole) => {
+    // before
+    // if (userRole === "Admin" || userRole === "Merchant" || userRole === "Agent" || userRole === "Owner") {
+    //   return true
+    // } else {
+    //   return false
+    // }
+
+    // After
+    const allowUsers = ["Admin", "Merchant", "Agent", "Owner"]
+    return allowUsers.includes(userRole)
+  }
+  console.log(canAcces("Merchant"))
     
 
 
