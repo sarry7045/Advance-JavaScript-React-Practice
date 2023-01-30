@@ -2,7 +2,7 @@ import React from "react";
 // import "../App.css";
 const EventBublingCapturing = () => {
   
-  // In case me kisi child div ko click krne k baad parent div ka event bhi call ho jata hai soo usse unessary calls ko rokne k liye 
+  // In case kisi child div ko click krne k baad parent div ka event bhi call hota hai soo uss unecssary calls ko rokne k liye 
   // event.stopPropagation   use krte hai
 
   document.querySelector("#grandparent");
@@ -20,7 +20,8 @@ const EventBublingCapturing = () => {
     "click",
     (e) => {
         console.log("Parent Clicked");
-        e.stopPropagation()
+      e.stopPropagation()
+      // use for stop the extra Events
     },
     false
   ); //bubbling

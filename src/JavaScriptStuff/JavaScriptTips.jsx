@@ -18,7 +18,7 @@ const JavaScriptTips = () => {
   };
   // console.log("Optional Chaining Object", user.address.area.road);
   console.log("Optional Chaining Object", user.address.area?.road); //Optional Chaining
-  // Suppose hum koi aise value paas kr dete hai jo object me exist na karti hoo, soo uss time pe hum ? use karte hai taki wo erroe ki jagah undefined show kare
+  // Suppose hum koi aise value paas kr dete hai jo object me exist na karti hoo, soo uss time pe hum ? use karte hai taki wo error ki jagah undefined show kare
   // Optional Chaining Object
 
 

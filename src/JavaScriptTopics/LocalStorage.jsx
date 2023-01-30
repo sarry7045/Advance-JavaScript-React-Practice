@@ -1,10 +1,15 @@
 import React from "react";
 
 const LocalStorage = () => {
+
+  // Example 1
   const users = { Name: "Suraj", Roll: 12 };
 
   localStorage.setItem("Users", JSON.stringify(users));
   console.log("Userss", users);
+
+
+  // Example 2
 
   let key = prompt("Enter Key you want to set");
   let value = prompt("Enter Value you want to set");

@@ -4,7 +4,7 @@ const UseeMemo = () => {
   // Suppose hum kisi ek page me multipe functions likh rahe hai and 2nd function ka 4th function se koi connection nhi hai but phir bhi woh
   // function call hota hai because wo same page me hai.
 
-  // For Stoppng that unnecessary Calls we usign - useMemo
+  // For Stopping that unnecessary Calls we use - useMemo
 
   // dependncy me wo value rahega jiss value k change pe wo function call karna hai
 

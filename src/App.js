@@ -37,8 +37,6 @@ export default App;
 // Drag and Drop API
 // FileReader API
 
-// LocalStorage Advanced Tutorial
-
 // StoryBook, Jest-Testing Library, Strong TypeScript
 
 // Social Media App

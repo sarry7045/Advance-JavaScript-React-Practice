@@ -8,10 +8,15 @@ const DocumentProperties = () => {
   // document.dispatchEvent
   // document.createElement
 
-  // querySelector sirf first Element ko he acces karega and changes karega
+  // querySelector sirf first Element ko he krta hai
   // querySelectorAll se hum saare ek he name k class ko access krr sakte hai
 
-  document.addEventListener("");
+  // let newElement = document.createElement("input");
+  // document.body.appendChild(newElement);
+
+
+  // document.addEventListener("");
+
   return <div></div>;
 };
 

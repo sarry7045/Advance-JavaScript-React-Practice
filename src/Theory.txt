@@ -1,4 +1,4 @@
-1)   Can we use React Witout create-react-app  =  Mostly Probelry No 
+1)   Can we use React Witout create-react-app  =  Most Probelry No 
 Because for Running React App We need some Setup like = ReactDOM , Babel, WebPack
 
 

@@ -33,7 +33,7 @@ const InterviewTypeQuestions = () => {
   
 
 
-  // Multiple The Array from this Index Number Numbe
+  // Multiple The Array from this Index Number
   const ArrayNumbers = [1, 2, 3, 4, 5]
   const Multipley = ArrayNumbers.map((item, index) => {
     return item * index
@@ -152,7 +152,7 @@ for (let a = 0; a <= 5; a++){
 
 
   
-  // Find smallest and largest nujmber
+  // Find smallest and largest number
   const arry = [2, 23, 65, 3, 43]
   arry.reduce((accum, num) => Math.min(accum, num))
   console.log("Small Number", arry)

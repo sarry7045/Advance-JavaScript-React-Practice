@@ -27,7 +27,6 @@ const Notification = () => {
       console.warn("Your Browser Doesn't Support Notification");
     }
   }
-  
   return (
     <div>
       <h4> Notification</h4>

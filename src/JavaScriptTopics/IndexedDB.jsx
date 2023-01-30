@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import LocalStorage from "./LocalStorage";
 
 const IndexedDB = () => {
   //   let db;
