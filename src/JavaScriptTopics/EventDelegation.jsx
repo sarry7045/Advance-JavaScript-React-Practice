@@ -16,6 +16,7 @@ const EventDelegation = () => {
       e.target.value = e.target.value.toUpperCase();
     }
   });
+
   return (
     <>
       <ul id="catergory">

@@ -179,14 +179,64 @@ for (let a = 0; a <= 5; a++){
   }
   summ()
   // 10
+
+
+
+
+  let aa = 0;
+alert( Boolean(aa) ); 
+// false
+let bb = "0";
+alert( Boolean(bb) ); 
+// true
+alert(aa === bb); 
+// true!
+
+
+
+  // null === undefined
+  //false
+  // null == undefined
+  // true
+  // === check the type and == is check only value
+
+
+
+  // null + 1      // 1
+  // undefined + 1    // NAN
+
+
+
+  alert( null > 0 );  // (1) false
+  alert( null == 0 ); // (2) false
+  alert(null >= 0); // (3) true
+  alert( undefined > 0 ); // false (1)
+  alert( undefined < 0 ); // false (2)
+  alert(undefined === 0); // false (3)
   
 
 
+  // Function Declaration
+  // function summm(a, b) {
+  //   return a + b;
+  // }
+
+  // Function Expression
+  // let summm = function(a, b) {
+  //   return a + b;
+  // };
+
+
+
+  let obectt1 = {};
+  let object2 = {}; // two independent objects
+  alert(obectt1 === object2); // false
+  // Because in Javascript every Object is Empty
 
   
-
-
-
+  
+  
+  
   return (
     <div>
       <h4>InterviewTypeQuestions</h4>

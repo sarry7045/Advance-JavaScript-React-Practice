@@ -56,6 +56,10 @@ const JavaScriptTips = () => {
 
   console.log("myNumber", myNumber);
   console.log("myNumber1", myNumber1);
+
+  let height = 0;
+  console.log(height || 100); // 100
+  console.log(height ?? 100); // 0
   // Nulish
 
 
@@ -164,6 +168,15 @@ const JavaScriptTips = () => {
   const { name, age, roll: { ID: UniqueID } } = personn
   console.log("Object Distrucring", name, age, UniqueID)
   // But in case of aaray sequence is matter
+
+
+  
+  
+  // Always use these way for dynamic Parameter.
+  function abcd(from){
+  console.log(from ?? "Text Not Givenn")
+  }
+  abcd()
   
 
 

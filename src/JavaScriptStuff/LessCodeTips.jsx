@@ -147,6 +147,13 @@ const LessCodeTips = () => {
     return allowUsers.includes(userRole)
   }
   console.log(canAcces("Merchant"))
+
+
+
+
+  // Tip10
+  // Suppose we need to write the big Nmber like 5000000000
+  console.log(5.e7)
     
 
 

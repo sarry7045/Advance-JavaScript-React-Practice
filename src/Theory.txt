@@ -6,3 +6,6 @@ Because for Running React App We need some Setup like = ReactDOM , Babel, WebPac
 
 
 3)   Const hame Reasignment of Object se Bachata hai
+
+4) Event Loop - The event loop concept is very simple. There’s an endless loop, where the JavaScript engine waits for tasks, 
+                executes them and then sleeps, waiting for more tasks.

@@ -5,7 +5,7 @@ import JavaScriptsTopics from "./JavaScriptTopics/JavaScriptsTopics.js";
 import LessCodeTips from "./JavaScriptStuff/LessCodeTips.jsx";
 import InterviewTypeQuestions from "./JavaScriptStuff/InterviewTypeQuestions.jsx";
 // import EventBublingCapturing from "./JavaScriptTopics/EventBublingCapturing.jsx";
-import ReactHooks from "./ReactHooks/ReactHooks.jsx";
+import ReactHooks from "./ReactHooks/ReactHooks.js";
 
 function App() {
   return (
@@ -33,10 +33,11 @@ export default App;
 
 //  Topics Need to Learn Properly
 
-// FormData
-// Drag and Drop API
-// FileReader API
+// UI Events for SEO
 
+
+
+// Function for Finoacci and Factorial
 // StoryBook, Jest-Testing Library, Strong TypeScript
 
 // Social Media App

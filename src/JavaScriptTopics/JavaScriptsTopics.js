@@ -22,6 +22,10 @@ import DragAndDrop from "./DragAndDrop";
 import FileReader from "./FileReader";
 import Geolocation from "./Geolocation";
 import Notification from "./Notification";
+import SymbolType from "./SymbolType";
+import DataTypesTips from "./DataTypesTips";
+import TryCatchFinally from "./TryCatchFinally";
+import OpenCloseWindow from "./OpenCloseWindow";
 // import EventBublingCapturing from "./EventBublingCapturing";
 
 const JavaScripts = () => {
@@ -50,6 +54,10 @@ const JavaScripts = () => {
       <FileReader />
       <Geolocation />
       <Notification />
+      <SymbolType />
+      <DataTypesTips />
+      <TryCatchFinally />
+      <OpenCloseWindow />
       {/* <EventBublingCapturing /> */}
     </div>
   );
