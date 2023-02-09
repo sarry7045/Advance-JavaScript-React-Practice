@@ -16,3 +16,6 @@ root.render(
     </Suspense>
   </React.StrictMode>
 );
+
+// npm audit
+// npm audit --fix

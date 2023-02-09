@@ -177,7 +177,21 @@ const JavaScriptTips = () => {
   console.log(from ?? "Text Not Givenn")
   }
   abcd()
-  
+
+
+
+  // check isDate Valid or Not
+  const isDateValid = (...val) => !Number.isNaN(new Date(...val).valueOf())
+  console.log(isDateValid("December 17, 1999 03:24:00"))
+
+
+
+
+  // Clear all Cookies
+  const clearALlCookies = document.cookie.split(';').forEach((cookie) => {
+    document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`)
+  })  
+  console.log("Remoove Cookie",clearALlCookies)
 
 
   return (

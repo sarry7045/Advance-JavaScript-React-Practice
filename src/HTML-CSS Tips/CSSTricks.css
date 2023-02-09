@@ -1,0 +1,36 @@
+.container {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+/* instead of these we can write in one line */
+
+.container {
+  font: italic bold 1rem/1.5 sans-serif;
+}
+
+.container {
+  margin-top: 2px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  margin-left: 8px;
+}
+
+/* instead of these we can write in one line */
+
+.container {
+  margin: 2px 4px 6px 8px;
+}
+
+.container {
+  background-color: aliceblue;
+  background-image: "";
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.container {
+  background: aliceblue url("") no-repeat right top;
+}
