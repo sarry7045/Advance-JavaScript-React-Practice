@@ -1,7 +1,7 @@
 import React from "react";
 
 const JavaScriptEvents = () => {
-  // PreventDefault - It's Changed the Default Behaviour.
+  // PreventDefault - It's Changed or Stop the Default Behaviour.
 
   const foocuss = () => {
     document.getElementById("heading").style.backgroundColor = "#e2e2e2";

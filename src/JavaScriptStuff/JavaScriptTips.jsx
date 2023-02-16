@@ -191,7 +191,27 @@ const JavaScriptTips = () => {
   const clearALlCookies = document.cookie.split(';').forEach((cookie) => {
     document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`)
   })  
-  console.log("Remoove Cookie",clearALlCookies)
+  console.log("Remoove Cookie", clearALlCookies)
+  
+
+
+
+  // Console Types
+  const namee = "Suraj"
+  const SurName = "Yadav"
+  const ID = "470545"
+  const userss = {
+    namee, SurName, ID
+  }
+  console.log({ namee, SurName, ID })
+  console.table(userss)
+  try {
+  if (namee === "Surr") {
+    return true
+    }
+  } catch (error) {
+  console.error(error)
+  }
 
 
   return (

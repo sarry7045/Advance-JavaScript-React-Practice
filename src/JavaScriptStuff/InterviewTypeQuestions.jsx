@@ -233,6 +233,14 @@ alert(aa === bb);
   alert(obectt1 === object2); // false
   // Because in Javascript every Object is Empty
 
+
+
+
+
+  // Print secondLast Element
+  const arr = ["First","Second","Third","Fourth","Fifth"]
+  console.log(arr.at(-4))
+
   
   
   

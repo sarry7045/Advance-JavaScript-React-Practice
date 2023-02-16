@@ -9,6 +9,7 @@ import InterviewTypeQuestions from "./JavaScriptStuff/InterviewTypeQuestions.jsx
 import ReactHooks from "./ReactHooks/ReactHooks.js";
 import SEO from "./SEO/SEO.jsx";
 import ReactInterviewTasks from "./ReactInterviewTasks/ReactInterviewTasks.jsx";
+import ReactLogicsPractice from "./ComponentsFunctionality/ReactLogicsPractice.jsx";
 // import HTMLCSSTips from "./HTML-CSS Tips/HTMLCSSTips.jsx";
 const HTMLCSSTips = React.lazy(() => import("./HTML-CSS Tips/HTMLCSSTips.jsx"))
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/SEO" element={<SEO />} />
         <Route path="/HTMLCSSTips" element={<HTMLCSSTips />} />
         <Route path="/ReactInterviewTasks" element={<ReactInterviewTasks />} />
+        <Route path="/ReactLogicsPractice" element={<ReactLogicsPractice />} />
       </Routes>
     </Router>
   );

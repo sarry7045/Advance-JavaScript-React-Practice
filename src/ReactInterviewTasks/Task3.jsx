@@ -18,6 +18,7 @@ const Task3 = () => {
     setisEnabled(true);
     setcurrIndex(indexItem);
   };
+    
   return (
     // Print all with map method , then if user click on check box then we need to show the delethe button , also delete functionality for each
     <>
