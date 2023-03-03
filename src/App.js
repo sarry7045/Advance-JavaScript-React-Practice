@@ -9,13 +9,15 @@ import InterviewTypeQuestions from "./JavaScriptStuff/InterviewTypeQuestions.jsx
 import ReactHooks from "./ReactHooks/ReactHooks.js";
 import SEO from "./SEO/SEO.jsx";
 import ReactInterviewTasks from "./ReactInterviewTasks/ReactInterviewTasks.jsx";
-import ReactLogicsPractice from "./ComponentsFunctionality/ReactLogicsPractice.jsx";
+// import ReactFunctionality from "./ReactFunctionality/ReactFunctionality.jsx";
 // import HTMLCSSTips from "./HTML-CSS Tips/HTMLCSSTips.jsx";
 const HTMLCSSTips = React.lazy(() => import("./HTML-CSS Tips/HTMLCSSTips.jsx"))
+const ReactFunctionality = React.lazy(() => import("./ReactFunctionality/ReactFunctionality.jsx"))
 
 // use React.lazy for fast rendering
 
 function App() {
+
   return (
     <Router>
       <Routes>
@@ -35,7 +37,7 @@ function App() {
         <Route path="/SEO" element={<SEO />} />
         <Route path="/HTMLCSSTips" element={<HTMLCSSTips />} />
         <Route path="/ReactInterviewTasks" element={<ReactInterviewTasks />} />
-        <Route path="/ReactLogicsPractice" element={<ReactLogicsPractice />} />
+        <Route path="/ReactFunctionality" element={<ReactFunctionality />} />
       </Routes>
     </Router>
   );
@@ -43,14 +45,9 @@ function App() {
 
 export default App;
 
-//  Topics Need to Learn Properly
+// Topics Need to Learn Properly
 
 // React-Window
-
-
-
-// Function for Finoacci and Factorial
-// StoryBook, Jest-Testing Library, Strong TypeScript
 
 // Social Media App
 // E - Commerce App

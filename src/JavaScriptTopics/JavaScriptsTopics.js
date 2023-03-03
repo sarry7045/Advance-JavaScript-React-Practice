@@ -31,6 +31,7 @@ import OpenCloseWindow from "./OpenCloseWindow";
 const JavaScripts = () => {
   return (
     <div>
+      <h4>JavaScripts Topics</h4>
       <ArgumentObject />
       <ArrayMethods />
       <CallApplyBind />

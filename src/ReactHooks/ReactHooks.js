@@ -6,10 +6,13 @@ import UseeEffect from "./UseeEffect";
 import UseeContext from "./UseeContext";
 import UseeReducer from "./UseeReducer";
 import UseeRef from "./UseeRef";
+import UseeDeferred from "./UseeDeferred";
+import UseeID from "./UseeID";
 
 const ReactHooks = () => {
   return (
     <div>
+      <h4>React Hooks</h4>
       <UseeState />
       <UseeMemo />
       <UseeCallback />
@@ -17,6 +20,8 @@ const ReactHooks = () => {
       <UseeContext />
       <UseeReducer />
       <UseeRef />
+      <UseeDeferred />
+      <UseeID />
     </div>
   );
 };

@@ -22,5 +22,6 @@ const UseeEffect = () => {
     </div>
   );
 };
-
+ 
 export default UseeEffect;
+

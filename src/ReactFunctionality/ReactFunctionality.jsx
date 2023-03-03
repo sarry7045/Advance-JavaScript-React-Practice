@@ -1,13 +1,13 @@
 import React from "react";
 import CoderDostTask from "./CoderDostTask/CoderDostTask.jsx";
 
-const ReactLogicsPractice = () => {
+const ReactFunctionality = () => {
   return (
     <div>
-      <h4> React Logic Practice</h4>
+      <h4> React Functionality</h4>
       <CoderDostTask />
     </div>
   );
 };
 
-export default ReactLogicsPractice;
+export default ReactFunctionality;

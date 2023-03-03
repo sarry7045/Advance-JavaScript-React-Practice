@@ -1,11 +1,14 @@
-import React from 'react'
+// import React from 'react'
+import { createContext } from "react";
 
-const UseeContext = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const globalContext = createContext("React");
 
-export default UseeContext
+// const UseeContext = () => {
+//   return (
+//     <div>
+
+//     </div>
+//   )
+// }
+
+export default globalContext;

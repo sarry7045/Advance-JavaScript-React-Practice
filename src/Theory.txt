@@ -1,11 +1,11 @@
-1)   Can we use React Witout create-react-app  =  Most Probelry No 
-Because for Running React App We need some Setup like = ReactDOM , Babel, WebPack
+1) Can we use React Witout create-react-app  =  Most Probelry No 
+   Because for Running React App We need some Setup like = ReactDOM , Babel, WebPack
 
 
-2)   JSX is one Type of JavaScript Object - Browser Read JSX using Transpilor (Babel)
+2) JSX is one Type of JavaScript Object - Browser Read JSX using Transpilor (Babel)
 
 
-3)   Const hame Reasignment of Object se Bachata hai
+3) Const hame Reasignment of Object se Bachata hai
 
 4) Event Loop - The event loop concept is very simple. There’s an endless loop, where the JavaScript engine waits for tasks, 
                 executes them and then sleeps, waiting for more tasks.

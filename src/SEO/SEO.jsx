@@ -9,6 +9,7 @@ const SEO = () => {
   // Title and Description on every Page usign Helmet.
   return (
     <div>
+      <h4>SEO</h4>
       <img
         src="images/originals/small.png"
         srcSet="images/originals/small.png 100w"
