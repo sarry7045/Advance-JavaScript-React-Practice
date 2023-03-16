@@ -9,3 +9,7 @@
 
 4) Event Loop - The event loop concept is very simple. There’s an endless loop, where the JavaScript engine waits for tasks, 
                 executes them and then sleeps, waiting for more tasks.
+
+5) Debouncing - Suppose when user typeying something for search soo when user type complete word then api call and show the result
+
+6)  Thortlling - In these case suppose user type one word then api start calling and searching about that one word related product

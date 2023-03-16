@@ -11,13 +11,19 @@ import SEO from "./SEO/SEO.jsx";
 import ReactInterviewTasks from "./ReactInterviewTasks/ReactInterviewTasks.jsx";
 // import ReactFunctionality from "./ReactFunctionality/ReactFunctionality.jsx";
 // import HTMLCSSTips from "./HTML-CSS Tips/HTMLCSSTips.jsx";
-const HTMLCSSTips = React.lazy(() => import("./HTML-CSS Tips/HTMLCSSTips.jsx"))
-const ReactFunctionality = React.lazy(() => import("./ReactFunctionality/ReactFunctionality.jsx"))
+// import MUIWebsite from "./MUI-Responsive-Website/MUIWebsite.jsx";
+import Reduxx from "./Redux/Reduxx.js";
+const HTMLCSSTips = React.lazy(() => import("./HTML-CSS Tips/HTMLCSSTips.jsx"));
+const ReactFunctionality = React.lazy(() =>
+  import("./ReactFunctionalities/ReactFunctionality.jsx")
+);
+const MUIComponents = React.lazy(() =>
+  import("./MUI-Components/MUIComponentss.jsx")
+);
 
 // use React.lazy for fast rendering
 
 function App() {
-
   return (
     <Router>
       <Routes>
@@ -38,6 +44,8 @@ function App() {
         <Route path="/HTMLCSSTips" element={<HTMLCSSTips />} />
         <Route path="/ReactInterviewTasks" element={<ReactInterviewTasks />} />
         <Route path="/ReactFunctionality" element={<ReactFunctionality />} />
+        <Route path="/MUIComponents" element={<MUIComponents />} />
+        <Route path="/Redux" element={<Reduxx />} />
       </Routes>
     </Router>
   );

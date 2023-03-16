@@ -192,6 +192,31 @@ const JavaScriptTips = () => {
     document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`)
   })  
   console.log("Remoove Cookie", clearALlCookies)
+
+
+
+
+  
+  // Convert Array to Object
+  const arrayData = [['a', 1], ['b', 2], ['c', 3], ['d', 4]]
+  const ArrayData = (arr) => {
+    return Object.fromEntries(arr)
+  }
+  console.log("ArrayData(arrayData)", ArrayData(arrayData))
+
+
+
+  
+  
+  // Suppose we need to remove null and undefined values form our object
+  const obj = {
+    a: 1,
+    b: null,
+    c: "hello",
+    d: undefined
+  }
+  const newObj = Object.fromEntries(Object.entries(obj).filter((_, val) => val != null))
+  console.log("newObj", newObj)
   
 
 
