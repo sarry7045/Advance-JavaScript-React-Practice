@@ -12,6 +12,7 @@ import ReactInterviewTasks from "./ReactInterviewTasks/ReactInterviewTasks.jsx";
 // import ReactFunctionality from "./ReactFunctionality/ReactFunctionality.jsx";
 // import HTMLCSSTips from "./HTML-CSS Tips/HTMLCSSTips.jsx";
 // import MUIWebsite from "./MUI-Responsive-Website/MUIWebsite.jsx";
+import ReactChart from "./ReactFunctionalities/ReactCharts/ReactChart.jsx"
 import Reduxx from "./Redux/Reduxx.js";
 const HTMLCSSTips = React.lazy(() => import("./HTML-CSS Tips/HTMLCSSTips.jsx"));
 const ReactFunctionality = React.lazy(() =>
@@ -46,16 +47,13 @@ function App() {
         <Route path="/ReactFunctionality" element={<ReactFunctionality />} />
         <Route path="/MUIComponents" element={<MUIComponents />} />
         <Route path="/Redux" element={<Reduxx />} />
+        <Route path="/ReactChart" element={<ReactChart />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
-// Topics Need to Learn Properly
-
-// React-Window
 
 // Social Media App
 // E - Commerce App

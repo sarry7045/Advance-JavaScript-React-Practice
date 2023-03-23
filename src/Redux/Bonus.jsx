@@ -9,7 +9,7 @@ const Bonus = () => {
   return (
     <>
       <div>
-        <button onClick={() => dispatch(increment())}>Increment</button>
+        <button onClick={() => dispatch(increment())}>Increment Bonus</button>
         {bonus}
       </div>
     </>

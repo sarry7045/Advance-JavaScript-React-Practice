@@ -10,7 +10,7 @@ const Account = () => {
 
   return (
     <>
-      <button onClick={() => dispatch(increment())}>Incremen</button>
+      <button onClick={() => dispatch(increment())}>Increment</button>
       <button onClick={() => dispatch(decrement())}>Decrement</button>
       Ammount: {amount}
       <br />
