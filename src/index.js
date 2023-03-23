@@ -65,9 +65,9 @@ root.render(
 // TypeScript       -    Good for Optimization
 // ReactJs          -    UI Library
 // ReduxToolKit     -    State Management (In Easy Way)
-// SCSS             -    Better Management for files
-// Material UI      -    Best UI Components
-// Axios            -    Best Features and Services
+// SCSS             -    Better
+// Material UI      -    Best for UI Components
+// Axios            -    Best Features
 // Formik           -    Good for Form Validation
-// Framer Motion    -    Best for animation
+// Framer Motion    -    Best for Animations
 // Jest             -    Good for testing
