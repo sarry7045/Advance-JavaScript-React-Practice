@@ -1,7 +1,7 @@
 // import React from 'react'
 import { createContext } from "react";
 
-const globalContext = createContext("React");
+const globalContext = createContext("Practice");
 
 // const UseeContext = () => {
 //   return (

@@ -5,8 +5,9 @@ const Home = () => {
   const contextValue = useContext(globalContext);
   return (
     <div>
-      <h4>Advance-JS-{contextValue}</h4>
-      <progress value={null} />
+      <h4>Advance-JavaScript-React-{contextValue}</h4>
+
+      {/* <progress value={null} /> */}
     </div>
   );
 };
