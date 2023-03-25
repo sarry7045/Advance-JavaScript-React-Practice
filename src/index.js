@@ -1,4 +1,4 @@
-import React, { Suspense, Profiler } from "react";
+import React, { Suspense, Profiler} from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { Provider } from "react-redux";
@@ -63,11 +63,30 @@ root.render(
 // Trending Softwares for Frontend Dev in 2023-24:
 
 // TypeScript       -    Good for Optimization
-// ReactJs          -    UI Library
+// ReactJs or NextJs -    UI Library
 // ReduxToolKit     -    State Management (In Easy Way)
 // SCSS             -    Better
 // Material UI      -    Best for UI Components
 // Axios            -    Best Features
-// Formik           -    Good for Form Validation
-// Framer Motion    -    Best for Animations
-// Jest             -    Good for testing
+// Formik           -    Best for Form Validation
+// Framer-Motion and React-Spring   -    Best for Animations
+// Jest or RTL      -    Good for Testing
+
+// React-Query      -    Data Management
+// React-Virtualised -    Data Listing
+
+
+
+// React Optimization
+
+// React Lazy
+// useMemo
+// useCallback
+// React virtualized for data listing
+
+
+// Social Media App
+// E - Commerce App
+// Booking App
+// Messaging App
+// Video Streaming
