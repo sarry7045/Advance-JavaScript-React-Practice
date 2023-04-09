@@ -1,6 +1,14 @@
 import React from "react";
 
 const ArrayMethods = () => {
+
+  // If we want to edit or change the any array then , create the copy of that array and use that 
+  // copied array soo isse first wale array pe koi effect nhi hooga  (using spread operator)
+
+  // Array.from()
+  // Use To convert in proper array
+
+
   const items = [
     {
       name: "Bike",
@@ -25,6 +33,7 @@ const ArrayMethods = () => {
     },
   ];
 
+
   // Map
   const Itemsmapp = items.map((value, index) => {
     return (
@@ -37,6 +46,35 @@ const ArrayMethods = () => {
   });
   console.log(Itemsmapp);
   // Map
+
+
+  //FlatMap
+  //Let's assume ki we need to give Mobile with cover free so we can create condition like this
+  let cart = [{
+    name: "Mobile",
+    qty: 1,
+    price:20000
+  },
+  {
+    name: "Laptop",
+    qty: 1,
+    price:50000
+  },
+  ]
+  let newCart = cart.flatMap(item => {
+    if (item.name === "Mobile") {
+      return [
+        item, {
+          name: "Cover",
+          qty: 1,
+          pirce:0
+        }
+      ]
+    } else {
+      return [item]
+    }
+  })
+  console.log(newCart)
     
     
 
@@ -112,16 +150,49 @@ const ArrayMethods = () => {
   // Unshift
   const unshiftArray = [1, 2, 3, 4, 5]
   unshiftArray.unshift(0,1)
-  console.log("unshiftArray",unshiftArray)
+  console.log("unshiftArray", unshiftArray)
+  
+
+  // at
+  const nums = [1, 2, 3, 4, 5]
+  // Best way to acccess index of any aaray or string.
+  console.log(nums.at(-1))
+  const Name = "Suraj"
+  console.log(Name.at(-1))  
+
+  
+  
+  //some
+  let scores = [20, 35, 49, 65, 90]
+  let filteredScore = scores.some((value) => {
+    return value > 80
+  })
+  //If any in array (some condition) hai toh true else false ex: >80 is 90 hai array me then its true , if condition >90 hota toh its false because aise koi value hai he nhi
+  console.log(filteredScore)  //true
+
+
+  
+  // every
+  let newScores = [54, 67, 76, 87, 72]
+  let newResult = newScores.every(value => {
+    return value > 50
+  })
+  //If all conditions are match then true else false ex: In these array all numbers are >50 so its true
+  console.log(newResult) //true
+
+
+  
+  // Flat
+  let arr = [1, 2, 3, [4, 5, 6]]
+  let arr1 = [1, 2, 3, [4, 5, 6,[7,8,9]]]
+  let newArr = arr.flat()
+  let newArr1 = arr1.flat(2)
+  console.log(newArr) //[1,2,3,4,5,6]
+  console.log(newArr1) //[1,2,3,4,5,6,7,8,9]
 
 
 
-    
-    
-    
-    
-
-  return <div>{Itemsmapp}</div>;
+    return <div>{Itemsmapp}</div>;
 };
 
 export default ArrayMethods;

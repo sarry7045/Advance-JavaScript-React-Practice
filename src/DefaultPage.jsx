@@ -3,6 +3,7 @@ import globalContext from "./ReactHooks/UseeContext";
 
 const Home = () => {
   const contextValue = useContext(globalContext);
+
   return (
     <div>
       <h4>Advance-JavaScript-React-{contextValue}</h4>

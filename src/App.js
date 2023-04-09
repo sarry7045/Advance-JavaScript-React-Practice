@@ -13,6 +13,7 @@ import ReactInterviewTasks from "./ReactInterviewTasks/ReactInterviewTasks.jsx";
 // import HTMLCSSTips from "./HTML-CSS Tips/HTMLCSSTips.jsx";
 // import MUIWebsite from "./MUI-Responsive-Website/MUIWebsite.jsx";
 import Reduxx from "./Redux/Reduxx.js";
+import ReacHookForm from "./ReactHookForm/ReacHookForm.jsx";
 const HTMLCSSTips = React.lazy(() => import("./HTML-CSS Tips/HTMLCSSTips.jsx"));
 const ReactFunctionality = React.lazy(() =>
   import("./ReactFunctionalities/ReactFunctionality.jsx")
@@ -47,6 +48,7 @@ function App() {
         <Route path="/ReactFunctionality" element={<ReactFunctionality />} />
         <Route path="/MUIComponents" element={<MUIComponents />} />
         <Route path="/Redux" element={<Reduxx />} />
+        <Route path="/ReacHookForm" element={<ReacHookForm />} />
       </Routes>
     </Router>
   );

@@ -26,6 +26,7 @@ import SymbolType from "./SymbolType";
 import DataTypesTips from "./DataTypesTips";
 import TryCatchFinally from "./TryCatchFinally";
 import OpenCloseWindow from "./OpenCloseWindow";
+// import DOM from "./DOM";
 // import EventBublingCapturing from "./EventBublingCapturing";
 
 const JavaScripts = () => {
@@ -60,6 +61,7 @@ const JavaScripts = () => {
       <TryCatchFinally />
       <OpenCloseWindow />
       {/* <EventBublingCapturing /> */}
+      {/* <DOM/> */}
     </div>
   );
 };

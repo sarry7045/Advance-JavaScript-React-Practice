@@ -63,7 +63,7 @@ root.render(
 // Trending Softwares for Frontend Dev in 2023-24:
 
 // TypeScript       -    Good for Optimization
-// ReactJs or NextJs -    UI Library
+// ReactJs with Vite or NextJs -    UI Library
 // ReduxToolKit     -    State Management (In Easy Way)
 // SCSS             -    Better
 // Material UI      -    Best for UI Components
@@ -76,13 +76,18 @@ root.render(
 // React-Virtualised -    Data Listing
 
 
-
 // React Optimization
 
-// React Lazy
+// ReactLazy - Suspense
 // useMemo
 // useCallback
 // React virtualized for data listing
+// try Catch
+// async await 
+// ===
+// Destructure array and object
+// Object Chaining - .?
+// Nullishing - ??
 
 
 // Social Media App
@@ -90,3 +95,5 @@ root.render(
 // Booking App
 // Messaging App
 // Video Streaming
+ 
+
