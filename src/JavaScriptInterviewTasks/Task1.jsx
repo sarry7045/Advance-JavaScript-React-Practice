@@ -48,7 +48,16 @@ const Task1 = () => {
     return arr[arr.length - 2];
   }
 
-    console.log(secondHighest(inputt));
+  console.log(secondHighest(inputt));
+  
+
+  
+  
+  
+  // Task 4
+
+  // Move all 0 to the end of the array 
+  // const numbers = [0, 2, 0, 5, 9, 0, 1];
     
 
 

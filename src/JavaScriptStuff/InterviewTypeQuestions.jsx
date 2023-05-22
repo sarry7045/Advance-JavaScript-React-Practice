@@ -241,6 +241,29 @@ alert(aa === bb);
   const arr = ["First","Second","Third","Fourth","Fifth"]
   console.log(arr.at(-4))
 
+
+
+  
+let arryy = [1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+//   Print Only 5 Numbers
+arryy.length = 5
+console.log(arryy)
+
+// Sum of array 
+
+let summm = arryy.reduce((x,y)=> x + y)
+console.log(summm)
+
+// Unique Value
+let unique = new Set(arryy)
+console.log([...unique])
+
+let xx = 30 , y = 40
+// Swap the value
+[xx,y] = [y,xx]
+console.log(x,y)
+  
+
   
   
   

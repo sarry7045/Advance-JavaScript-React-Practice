@@ -18,14 +18,14 @@ function onRender(
   startTime,
   commitTime
 ) {
-  console.log({
-    id,
-    phase,
-    actualDuration,
-    baseDuration,
-    startTime,
-    commitTime,
-  });
+  // console.log({
+  //   id,
+  //   phase,
+  //   actualDuration,
+  //   baseDuration,
+  //   startTime,
+  //   commitTime,
+  // });
 }
 
 // const store = configureStore({
@@ -88,6 +88,8 @@ root.render(
 // Destructure array and object
 // Object Chaining - .?
 // Nullishing - ??
+// Always Create one route of Default page * 
+// Try to use useReducer if we need to create more hen 3 useState
 
 
 // Social Media App

@@ -3,6 +3,16 @@ import React from "react";
 const Prototype = () => {
     
     // Prototype is Javascript Hidden Inbuild Methods
+  // In Js Every Object has there Prototype
+
+
+//   Here's a simplified explanation of prototypes:
+
+// When you create an object, it is linked to its prototype.
+// If you try to access a property or method on the object, JavaScript first checks if the object has that property or method.
+// If it doesn't, JavaScript looks for it in the prototype of the object.
+// If the property or method is found in the prototype, it is used.
+// If the property or method is not found in the prototype, JavaScript continues searching up the prototype chain until it finds it or reaches the end.
     
   // Before  Prototype
 

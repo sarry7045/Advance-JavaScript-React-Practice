@@ -13,3 +13,42 @@
 5) Debouncing - Suppose when user typeying something for search soo when user type complete word then api call and show the result
 
 6) Thortlling - In these case suppose user type one word then api start calling and searching about that one word related product
+
+7) this - this tabhi kaam krta hai jab koi function ho and uske upper uska parent object ho, and usme wo property exisit karti ho.
+
+8) Diffrence Between Promise and async await = Basicallly it's 90% same but, in async/await its wait for the response, when its resolve then it move forward,
+   main diffrence is the execution of code.
+
+9) Event Loop - Its checking the callStack everytime , when the callstack is empty , it will take code from task queue and put inside the call stack. 
+
+10) memoization - Here's a simplified explanation of memoization:
+
+When a function is called with certain inputs, the memoization technique checks if the function has already been called with the same inputs before.
+If the function has been called before with the same inputs and the result was cached, the cached result is returned instead of executing the function again.
+If the function has not been called before with the same inputs, the function is executed, and the result is cached for future use.
+The next time the function is called with the same inputs, the cached result is returned directly, avoiding the need to recompute the result.
+
+11) Middleware  -
+   applyMiddleware - Dispatch krne se pehle or koi Action ko bhjene se pehle koi event karna hua so tab hum middleware use krte hai
+   Redux thunk - Suppose hame dispatch krne se pehle api se koi data catch krna hai uss situation me hum miidleWare ( thunk ) use krte hai
+
+   12) Unidirectional Data Flow - It means we can pass data from parent to child only; and for child to parent we can use Callback functions or Context API or Redux
+
+
+
+
+
+
+
+
+
+
+Currently i have almost 3 years of experience in frontend development , and i have worked on various technologies like Javascript , 
+TypeScript , ReactJs, NextJs, Redux, RestFull APi's n all , and my current organization is WealthDesk which is accquired by PhonePe , 
+Reason Behind changing is ki Actully they are moving to banglore, and in my case shifting to banglore is not possible , like for some family issue n all , soo..
+
+
+
+
+
+

@@ -28,3 +28,10 @@
 .hide {
   display: none;
 }
+
+.last{
+  color: red;
+}
+.first{
+  color: green;
+}

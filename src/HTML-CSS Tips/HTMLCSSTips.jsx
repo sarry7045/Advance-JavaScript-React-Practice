@@ -7,6 +7,11 @@ const HTMLCSSTips = () => {
   useEffect(() => {
     goToTop();
   });
+
+
+
+
+  // Inline ,Inline Block, Block
   return (
     <>
       {/* Suppose we need to disable Right click on some component or element */}

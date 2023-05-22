@@ -28,12 +28,19 @@ import TryCatchFinally from "./TryCatchFinally";
 import OpenCloseWindow from "./OpenCloseWindow";
 // import DOM from "./DOM";
 // import EventBublingCapturing from "./EventBublingCapturing";
+import Scope from "./Scope";
+import Throttling from "./Throttling";
+import MapSet from "./MapSet";
+import GeneratorFunction from "./GeneratorFunction";
 
 const JavaScripts = () => {
+
+  // https://coderdost.github.io
+
   return (
     <div>
       <h4>JavaScripts Topics</h4>
-      <ArgumentObject />
+      {/* <ArgumentObject />
       <ArrayMethods />
       <CallApplyBind />
       <CallBackFunction />
@@ -59,9 +66,17 @@ const JavaScripts = () => {
       <SymbolType />
       <DataTypesTips />
       <TryCatchFinally />
-      <OpenCloseWindow />
+      <OpenCloseWindow /> */}
       {/* <EventBublingCapturing /> */}
-      {/* <DOM/> */}
+      {/* <DOM/> 
+      */}
+      <Scope />
+      
+      <Debouncing />
+      <Throttling />
+      <MapSet />
+      <GeneratorFunction/>
+
     </div>
   );
 };

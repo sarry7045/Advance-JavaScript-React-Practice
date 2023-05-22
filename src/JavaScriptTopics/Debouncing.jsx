@@ -23,11 +23,34 @@ const Debouncing = () => {
     };
   };
 
-  const betterFunction = doSomeLogic(getData, 300);
+  const betterFunction = doSomeLogic(getData, 1000);
+
+  const array = [1, 2, 3];
+
   return (
     <div>
       <h4>Debouncing</h4>
       <input type="text" onKeyUp={betterFunction} />
+      <div>
+        {array.map((element, index) => {
+          console.log("index",index)
+          const isFirstElement = index === 0;
+          const isLastElement = index === array.length - 1;
+          const classNames = [""];
+          if (isFirstElement) {
+            classNames.push("first");
+          }
+          if (isLastElement) {
+            classNames.push("last");
+          }
+
+          return (
+            <div key={index} className={classNames.join("")}>
+              {element}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

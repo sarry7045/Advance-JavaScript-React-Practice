@@ -1,36 +1,59 @@
 import React from "react";
+import { Stack, TextField, Button } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
 
+// type formValue = {
+//   email: string,
+//   password : string
+// }
+
 const ReacHookForm = () => {
-  const form = useForm();
-  const { register, control } = form;
-  const { name, onBlur, onChange, ref } = register("username");
+  // const form = useForm<formValue>();
+  const form = useForm({
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
+
+  const { register, handleSubmit, formState, control } = form;
+
+  const { errors } = formState;
+  const onSubmit = (form) => {
+    console.log(form);
+  };
 
   return (
     <div>
-      <form>
-        <label htmlFor="username">Username</label>
-        <input
-          name={name}
-          onChange={onChange}
-          onBlur={onBlur}
-          ref={ref}
-          type="text"
-          id="username"
-        />
-
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" {...register("email")} />
-
-        <label htmlFor="channel">Username</label>
-        <input
-          type="text"
-          id="channel"
-          {...register("channel")}
-        />
-
-        <button> Submit</button>
+      <h4>ReacHookForm</h4>
+      <form noValidate onSubmit={handleSubmit(onSubmit)}>
+        <Stack spacing={2} width={400}>
+          <TextField
+            label="Username"
+            type="email"
+            {...register("email", { required: "Required" })}
+            error={!!errors.email}
+            helperText={errors.email?.message}
+          >
+            {" "}
+            Username{" "}
+          </TextField>
+          <TextField
+            label="Password"
+            type="password"
+            {...register("password", { required: " Required" })}
+            error={!!errors.password}
+            helperText={errors.password?.message}
+          >
+            {" "}
+            Password{" "}
+          </TextField>
+          <Button type="submit" variant="contained" color="primary">
+            {" "}
+            Login{" "}
+          </Button>
+        </Stack>
       </form>
       <DevTool control={control} />
     </div>
