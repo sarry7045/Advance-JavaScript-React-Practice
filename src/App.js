@@ -57,9 +57,3 @@ function App() {
 export default App;
 
 
-// Semantic
-// Debugging
-// BreakPoints
-// React Error Handling Features
-// Best React Effective Tooling
-// Accessibilty

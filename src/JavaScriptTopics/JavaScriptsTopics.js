@@ -32,6 +32,7 @@ import Scope from "./Scope";
 import Throttling from "./Throttling";
 import MapSet from "./MapSet";
 import GeneratorFunction from "./GeneratorFunction";
+import CallBackPromiseAsyncAwait from "./callBackPromiseAsyncAwait";
 
 const JavaScripts = () => {
 
@@ -70,12 +71,13 @@ const JavaScripts = () => {
       {/* <EventBublingCapturing /> */}
       {/* <DOM/> 
       */}
-      <Scope />
+      {/* <Scope />
       
       <Debouncing />
       <Throttling />
       <MapSet />
-      <GeneratorFunction/>
+      <GeneratorFunction /> */}
+      <CallBackPromiseAsyncAwait/>
 
     </div>
   );

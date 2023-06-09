@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import InterviewTasks from "./InterviewTasks";
+import HtmlCssTheory from "./HtmlCssTheory";
 
 const HTMLCSSTips = () => {
   const goToTop = () => {
@@ -8,10 +10,6 @@ const HTMLCSSTips = () => {
     goToTop();
   });
 
-
-
-
-  // Inline ,Inline Block, Block
   return (
     <>
       {/* Suppose we need to disable Right click on some component or element */}
@@ -43,6 +41,8 @@ const HTMLCSSTips = () => {
           {/* Always use loading lazy for img tag for better performance */}
         </picture>
       </div>
+      <InterviewTasks />
+      <HtmlCssTheory />
     </>
   );
 };

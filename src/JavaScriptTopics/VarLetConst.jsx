@@ -1,7 +1,7 @@
 import React from "react";
 
 const VarLetConst = () => {
-  // Var is global scoope,
+  // Var is function scoope,
   // let and const is block
 
   // let can't support redeclaration but its support Re-Assignment

@@ -3,6 +3,9 @@ import React from "react";
 const CallApplyBind = () => {
   // suppose kisi function me hamne 2 parameter paas kiya hai , and ussi function me hame aur bhi 2 paramter chahiye jo dynamic aata ho
   // uske liye hum call apply or bind use krr sakte hai
+
+
+  //jab bhi kisi object ko kisi function k sath attach krna hai , taki hum uskp reuse karr paye or uske features use karr paye
   
 
   const callApppBind = function (address, room) {

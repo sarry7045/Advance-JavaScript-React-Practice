@@ -1,6 +1,9 @@
 import React from "react";
 
 const DeepShallowCopy = () => {
+
+  // Techniqe of creating the copy of OBJ , but in shallow copy it does't affcet on nested obj thats y we use deep copy
+  
   // Shallow Copy
 
   var ShallObj = {

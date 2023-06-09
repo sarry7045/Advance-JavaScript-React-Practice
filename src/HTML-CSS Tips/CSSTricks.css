@@ -1,3 +1,17 @@
+.parent {
+  width: 500px;
+  height: 500px;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
 .container {
   font-style: italic;
   font-weight: bold;

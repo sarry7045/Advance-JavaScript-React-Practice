@@ -1,54 +1,132 @@
 1) Can we use React Witout create-react-app  =  Most Probelry No 
    Because for Running React App We need some Setup like = ReactDOM , Babel, WebPack
 
+2) Debouncing - Suppose when user typeying something for search soo when user type complete word then api call and show the result
 
-2) JSX is one Type of JavaScript Object - Browser Read JSX using Transpilor (Babel)
+3) Thortlling - In these case suppose user type one word then api start calling and searching about that one word related product
 
-
-3) Const hame Reasignment of Object se Bachata hai
-
-4) Event Loop - The event loop concept is very simple. There’s an endless loop, where the JavaScript engine waits for tasks, 
-                executes them and then sleeps, waiting for more tasks.
-
-5) Debouncing - Suppose when user typeying something for search soo when user type complete word then api call and show the result
-
-6) Thortlling - In these case suppose user type one word then api start calling and searching about that one word related product
-
-7) this - this tabhi kaam krta hai jab koi function ho and uske upper uska parent object ho, and usme wo property exisit karti ho.
-
-8) Diffrence Between Promise and async await = Basicallly it's 90% same but, in async/await its wait for the response, when its resolve then it move forward,
+4) Diffrence Between Promise and async await = Basicallly it's 90% same but, in async/await its wait for the response, when its resolve then it move forward,
    main diffrence is the execution of code.
 
-9) Event Loop - Its checking the callStack everytime , when the callstack is empty , it will take code from task queue and put inside the call stack. 
+5) Event Loop - Its checking the callStack everytime , when the callstack is empty , it will take code from task queue and put inside the call stack. 
 
-10) memoization - Here's a simplified explanation of memoization:
-
+6) memoization - Here's a simplified explanation of memoization:
 When a function is called with certain inputs, the memoization technique checks if the function has already been called with the same inputs before.
 If the function has been called before with the same inputs and the result was cached, the cached result is returned instead of executing the function again.
 If the function has not been called before with the same inputs, the function is executed, and the result is cached for future use.
 The next time the function is called with the same inputs, the cached result is returned directly, avoiding the need to recompute the result.
 
-11) Middleware  -
-   applyMiddleware - Dispatch krne se pehle or koi Action ko bhjene se pehle koi event karna hua so tab hum middleware use krte hai
+7) Middleware  - applyMiddleware - Dispatch krne se pehle or koi Action ko bhjene se pehle koi event karna hua so tab hum middleware use krte hai
    Redux thunk - Suppose hame dispatch krne se pehle api se koi data catch krna hai uss situation me hum miidleWare ( thunk ) use krte hai
+   In simple terms, the main use of middleware in Redux is to add extra functionality to the process of dispatching actions and updating the state.
 
-   12) Unidirectional Data Flow - It means we can pass data from parent to child only; and for child to parent we can use Callback functions or Context API or Redux
+8) Unidirectional Data Flow - It means we can pass data from parent to child only; and for child to parent we can use Callback functions or Context API or Redux
+
+9) Async and Defer Script Tag - In Normal case first html is loaded then js load then its execute then again html load
+   In Async Case - HTML and JS is loaded together but its stop for execution then agian remaning html is Loaded
+   In Defer case - All HTML and JS is loaded together then at the end Execution is statrt
+
+10) CSS sprites - are a technique used to combine multiple small images into a single larger image called a sprite sheet.
+
+11)  Pollyfill - Suppose Kisi object me or aaray me koi prototype avaibale nhi hai but future me wo aane wali hai but officialy launh nhi hua hai, 
+     then pollyfill techniq k use se hum khud ek prototype bana sakte hai
+     if(!Array.prototype.containes) means jab array me cotaines naam la koi prototype nhi hai tab  
+
+12) use strict uses = Ex: without US num = 10 is fine but with use of US we have to create variable like this (var num = 10)  
+
+13) Reconciliation - So when we update the any component in react , then react checks the which part of component is change , and which part of that component we have to
+    update , instead of update the entire page
+
+14) JavaScript Deep Flow - Memory Heap - Store all the task - Call Staclk - Its convert code to the Stack form
+     Browser or Web API's - Suppose one image is taking time of 2 min to load - so in this situation Browser convert into the async 
+     Callback queue  ot Task queue   - It contains all the task
+
+15) Diffrence betwen Library and FrameWork - In FrameWork flow is already defined and in Libray we have to deside the flow. in one framework k under multiple library ho sakti hai but ek
+    libray k under koi framework kabhi nhi ho sakta
+
+16) Props is inmutable - beucase component is not allow to change the props 
+
+17) React Fragement -React Fragment is a feature in React that allows you to group multiple elements or components together without introducing an additional wrapping element
+
+18) HOC - In simple terms, a Higher-Order Component (HOC) is a function that takes a component and returns a new enhanced component with additional functionality or props.
+
+19) Diffrence between primise.all, allsettled, any , race - All - means jab sabhi promise fullfilled ho jaaye tab he resloved kare , allsettled - ya toh sabhi fullfilled ho ya sabhi reject ho,
+    any - usme se koi bhi fullfilled ho jaye toh resloved dedega.
+
+20) Dumb Component - Measn it don's have any state or logic - it only reveive props from parent  , and difrectly show on UI.
+
+21) Mixin in Scss = for mixin technique we have to create file like this (_mixins) , suppose we have to create one style for any div and wo div ka style hume multipe jagah par 
+    use krna hai so, hum usse mixin ki madat se bana k , then variable ko import kara k direct use kar sakte hai
+
+22) Extend in scss - 
+
+23) forwardRef - Its same like useRef but if we have to chnagge the ref from parent to child compomnent at that time we use these
+
+24) Pure Compomnent - React.memo() -The main use of a Pure Component in React is to optimize performance by reducing unnecessary re-renders of a component.
+
+25  Why state is not updating immedaitlay - In React, state updates are not applied immediately due to the asynchronous nature of the setState function. 
+The main reason for this behavior is to optimize performance and avoid unnecessary re-renders.
+Its updates the next render cycle.
+
+26) - HOC is function that takes a component and returns a new compomnent. 
+
+27) pusedo classes - a:hoover , pusedo element p::before
+
+28) Callback hell - In simple terms, callback hell happens when you have a lot of functions that depend on the results of other functions.
+
+29) Temporal Deadzone - It means ki hum let or const ko bina declare kiye upper use nhi kar sakte. 
+
+30) What are the security measure you take while buuld application - Input Validation and Authentication and Authorization, Error Hangling
+
+31) diffrence between promise and async await - Async await is the proimse but its easier to write, Promise hase resloved, reject, and pending - await has resolve and reject,
+for Error Hangling - primise - .then .cath, async/await - try cathc  
+
+32) primitive and non primitcve data typoe - primitive - string, number, array, boolean, null, undefined, - non primitive - array , object, function
+
+33) Web Accessibilty - In simple words, web accessibility means creating websites that can be used by everyone, including people with visual, auditory, cognitive, or physical disabilities.
+ 
+34) when the response is sent from server to brower what gets loaded first - HTML, CSS then JavaScript
+
+35) what is IIFs - Suppose function ko niche na execute na krke wahi execiute kara de like 
+function sum(a.b){
+return a + b;
+}
+sum
+(function sum(a.b){
+return a + b;
+}())
+
+36) yield: The yield keyword is used in generator functions to pause and resume the execution of the function. Generator functions are special 
+    functions that can be paused and resumed during their execution,
+
+
+37) Code Splitting in react js - In simple words, code splitting is like breaking down a big chunk of code into smaller pieces.
+
+38) what happens if we call setState in render() - Calling setState() within the render() method of a React component can lead to an infinite loop and cause performance issues.
+
+39) Mutable - Means jo chiz hum change or modified kar sake like Array and Object , Inmutable - Jo chiz hum chnage na kar sake like - Props
+
+40) Inine - hieght and widht is not working its automaticaly ficks , Block - starting all element with new line, its accupy the whle lije space
+Inline -block - hieght and width is valid and its not occupy the whole space , and its not move to the seconnd line
+
+41) Call by value call by Reference - primitive data types its called by values means its change the both data , and the Reference type its change the both data 
+var a =10;
+var b = a
+b = 0
+// b = 0
+// a = 10
+
+42) difference between usehsitory useparam usenavigator uselocation in react router
 
 
 
+const a =[ 4,5,6,7,4,8,9,7]
+output [[4,4], [5], [6], [7,7] [8], [9] ]
 
+const arr = [ 1,1,2,3,1,4]
+output = { 1:3, 2:1}, 3:2
 
+wrire the pollyfill for map and foreach - suppose koi browker koi functionality suport nhi krata then uss time pe hum pollyfil usew krte hai
+write the logic to move all 0 move to end of the array
 
-
-
-
-
-Currently i have almost 3 years of experience in frontend development , and i have worked on various technologies like Javascript , 
-TypeScript , ReactJs, NextJs, Redux, RestFull APi's n all , and my current organization is WealthDesk which is accquired by PhonePe , 
-Reason Behind changing is ki Actully they are moving to banglore, and in my case shifting to banglore is not possible , like for some family issue n all , soo..
-
-
-
-
-
-
+restting and normalizing

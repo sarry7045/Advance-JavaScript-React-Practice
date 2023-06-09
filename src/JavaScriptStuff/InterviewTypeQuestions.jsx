@@ -261,7 +261,127 @@ console.log([...unique])
 let xx = 30 , y = 40
 // Swap the value
 [xx,y] = [y,xx]
-console.log(x,y)
+  console.log(x, y)
+  
+
+
+// Guess the output
+  let data = "size"
+  const bird = {
+    size:"Small"
+  }
+console.log(bird[data]) //Small
+console.log(bird["size"]) //Small
+console.log(bird.size) //Small
+  console.log(bird.data) //Undefined
+  
+
+
+  //Guess the result
+  const objj = {
+    a:"suraj",
+    b:"Neeraj",
+    a:"yadav"
+}
+  console.log(objj) //{ a: 'yadav', b: 'Neeraj' }
+  
+
+  // Type of
+  let dataa = 3+4+'5'
+  console.log(typeof dataa) //string
+  console.log(typeof 3 + 4 + "5") //number45 - Because first it give the type of 3 then normal print 45
+  
+
+  // Guess the output
+  function getInfo (valuee){
+    valuee.name = "Suraj"
+    }
+    const person ={
+        name:"Neeraj"
+  }
+  getInfo(person)
+  console.log(person) // Name :"Suraj"
+  // and when we call the function bottom of console then the output is  Neeraj
+
+
+  
+  
+  
+  const obj = {
+    name :"Suraj",
+    age:30
+}
+
+function findValue(data){
+ const objKeys = Object.keys(data)
+ console.log(objKeys)
+ 
+ const res = objKeys.map((key)=>{
+     const value = data[key];
+     return [key,value]
+ })
+ return res
+}
+
+const res = findValue(obj)
+  console.log(res) //[ [ 'name', 'Suraj' ], [ 'age', 30 ] ]
+  
+
+    
+  // Task 1
+  const input1 = { a: 1, b: 2, c: 3, d: 10, e: 12 };
+  const input2 = { a: 2, b: 12, c: 6, d: 10 };
+
+  // Output we need = { d: 10, e:12 }
+
+  function func(inp1, inp2) {
+    const obj = {};
+    for (let i in inp1) {
+      console.log(i);
+      if (inp1[i] === inp2[i]) {
+        obj[1] = inp1[i];
+      }
+    }
+    return obj;
+  }
+
+    console.log(func(input1, input2));
+    
+
+
+  // Task 2
+
+  const str = "This is Javscript Code";
+  const spil = str.split(" ");
+  console.log(spil);
+
+  const revereseAray = spil
+    .map((item) => item.split("").reverse().join(""))
+    .join(" ");
+    console.log(revereseAray);
+
+    
+
+
+  // Task 3
+
+  const inputt = [1, 2, -2, 7, 11, 1];
+
+  function secondHighest(inp) {
+    let arr = [...new Set(inp)].sort((a, b) => a - b);
+    return arr[arr.length - 2];
+  }
+
+  console.log(secondHighest(inputt));
+  
+
+  
+  
+  
+  // Task 4
+
+  // Move all 0 to the end of the array 
+  // const numbers = [0, 2, 0, 5, 9, 0, 1];
   
 
   

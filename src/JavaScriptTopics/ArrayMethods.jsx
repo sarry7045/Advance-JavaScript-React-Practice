@@ -191,6 +191,16 @@ const ArrayMethods = () => {
   console.log(newArr1) //[1,2,3,4,5,6,7,8,9]
 
 
+  // Slice
+  const arrayy = ["aa","ddd","aadfe","lll","ppp"]
+  console.log(arrayy.slice(1, 4))
+  
+  // Splice
+  const array = [1, 2, 3, 4, 5]
+  console.log(array.splice(1, 1, 9))
+  console.log(array)
+
+
 
     return <div>{Itemsmapp}</div>;
 };

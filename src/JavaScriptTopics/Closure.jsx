@@ -44,7 +44,46 @@ const Closure = () => {
   }
   
   let welcomeJohn = createUser('john') 
-  welcomeJohn() // // Hi john is created;
+  welcomeJohn() //Hi john is created;
+
+
+
+  // Lexical Scope
+
+  function hello() {
+    var a = 10;
+    function start(){
+      return a
+    }
+    return start()
+  }
+  console.log(hello());
+
+  // Same Example with Closure
+
+  function helloc() {
+    var a = 20;
+    function startc() {
+      return a
+    }
+    return startc;
+  }
+  var storec = helloc();
+  console.log(storec())
+
+
+  function init() {
+    var name = "Suraj"
+    function inner() {
+      name = "Neeraj";
+      console.log(name)
+    }
+    console.log("outer", name)
+    inner()
+  }
+
+  init()
+
 
   
 
