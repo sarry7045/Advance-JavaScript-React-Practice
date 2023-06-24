@@ -44,7 +44,7 @@ The next time the function is called with the same inputs, the cached result is 
 15) Diffrence betwen Library and FrameWork - In FrameWork flow is already defined and in Libray we have to deside the flow. in one framework k under multiple library ho sakti hai but ek
     libray k under koi framework kabhi nhi ho sakta
 
-16) Props is inmutable - beucase component is not allow to change the props 
+16) Props is inmutable - beucase component is not allow to change the props , props is read only
 
 17) React Fragement -React Fragment is a feature in React that allows you to group multiple elements or components together without introducing an additional wrapping element
 
@@ -88,7 +88,7 @@ for Error Hangling - primise - .then .cath, async/await - try cathc
 34) when the response is sent from server to brower what gets loaded first - HTML, CSS then JavaScript
 
 35) what is IIFs - Suppose function ko niche na execute na krke wahi execiute kara de like 
-function sum(a.b){
+function sum(a,b){
 return a + b;
 }
 sum
@@ -118,15 +118,171 @@ b = 0
 
 42) difference between usehsitory useparam usenavigator uselocation in react router
 
+43) use of json.strigify and parse
+
+44) falsy values in JavaScript - null, undefined, 0 , ""
+
+45) React Optimization -
+// ReactLazy - Suspense
+// useMemo
+// useCallback
+// React virtualized for data listing
+// Error Handling
+// Object Chaining - .?
+// Try to use useReducer if we need to create more hen 3 useState
+// pure comoponent
+// memorization
+
+46) Code-Splitting - Code splitting is a technique used to break down a large bundle into smaller
+
+47) Normalization - normalization retains some default styles
+
+48) Resetting - resetting starts from a completely blank slate.
+
+49) same origin policy with Javascript - Like dono he URI ka origin same hona chahiye like - http://www.abc.com/p and http://www.abc.com/t - Succes
+http://www.abc.com82/p
+http://www.abc.com/p
+Shows Error - Because Iska Origin Diffrent hai
+
+50) Canvas Tag = Cavas tag give us to basic container for creating graphics using Javascript
+
+51) Data attribute - We can give every html tags to diffrent diffrent ID's like 
+<a href="" data-id="1" data-age="2" id="link"></a>
+link.addEventListener("click", function(){
+   console.log(this.attribute("data-age))
+})
+so after click of that every data age will print
+
+52) Geolocation - Its use for the get current location of user using navigator.Geolocation.getCurrentPosition
+
+53 )  HTML tag - <h2>, HTML Element - <h2></h2>
+
+54) <div> </div> vs <span> </span> tag - div tag is block level element means is will take full width and span tag is inline level element it means it occupies only the space it needs
+                                   and does not create line breaks.
+
+55) Covert Inline element into block level element - we can use display block
+
+56) SVG and Canvas Tag - Mostley SVG is Clear and In SVG we use Maths and in Canvas we use Javascript for the Design
+
+57) Web Workers - Web Workers allow you to run scripts in the background without blocking the user interface
+
+58) Figure Tag is use for Image container like if we want image and its titlle so we can use inside figure figureCaption
+
+59) Datalist and Select Tags - Data gives the suggestion to select and Select gives only you provide.
+
+60) Custom data validation in html5 - Like Required
+
+61) Img srcset attribute - Means suppose if we want to diifrent diffrent pixel iamge in diff - diff screen.
+
+62) First child and Last Child - Pusedo Classes - Means suppose koi container hai uske under multiple childs hai, soo agar first element pe styling karna hai so we use first:child 
+     and last element pe style krna hai so we use last:element
+
+63) ::Before and ::After - Puedo Element - Use for accese any element first child
+
+64) Max-widht and Min-widht - Means suppose koi image kisi div se bahar overflow kar rahi hai, at that time se use this , soo wo automaticaly egjest kar leta hai.
+
+65) CSS Vendor Prefixes - Soo suppose css ki koi koi property kisi kisi browers me nahi chalti, soo us case ne hum Vendor Prefixe techniq use krte hai with the use of @keyFrames
+
+65) @KeyFrames
+
+66) BEM Classes - Give the proper Naming conventions like #header #header-logo #header-content #header-searchbar
+
+67)  With the use of @support tag we can see ki is the brower support some css features or not  
+
+68) useRef - useRef ideal for storing mutable values or references that don't affect the component's rendering or state, it's give the direct acces to DOM
+
+69) Custom Hooks - Custom hooks in React are reusable functions that allow you to encapsulate and share logic between multiple components.
+
+70) Virtual Dom - Its create the 2 copy of main DOM, and if kuch chnages hua compo me then wo dono ko compare karega then update kareag
+    Reconciliation is the Process of Virtual DOM, and Doiffing is that Upadted part of Virtual DOM
+
+72) React Portal - Suppose agar koi chiz main root id k bahar likhna hua toh new porta bana k we can use.
+
+73) Page k load hone se pehle if kuch achive krna hai so we use constructor , its also one type of lifecycle method in Class 
+
+74) State Lifting - Means pass data form child to paraent
+
+75) use of callback function inside setState - setState((prev)=> prev + 1)
+
+76) how to validate props in react - We can use TypeScript or prop-types package
+
+77) micro and Macro task - Nomal tasks are Micro task and setTimeout is macro task
+
+78) JSX Bundler || Webpack = - Means its create every page ka ek bundel taki jab bhi koi page render hoo toh woh bundle ko he direct execute karde
+
+79)  Browser Cache - Its store the cache in brower localy, Application store the cache In Mobile Device
+
+80 ) Window and document - document refer the document loaded on the brower and Window refer the brower window or tan 
+
+81) Serive Workers - Basicallly its use for PWA , Running Background Script Process in Browser, Caching Resources: - Means uye cache store krke rakhta hai and user offline hone 
+                    pe bhi noficatins n all bhejne ka kaam krta hai
+
+82) Function Currying - Its a function with multiple arguments, Its take a one arguments at the time, and returns new function
+
+83) Justify content and Justify items - Basicaly Content is apply on Parent, and Item is apply for child
+
+84) NextJs 13 Features - TypeScript Support, Automatic Routing, SSR wit use Hook, Turbo Pack, Alt attribute is Required in Image, Don't Need to add <a> </a> tag in Link Tag.
+
+85) Event Delegation - To Stop Event Bubbling
+
+86) Synthetic Events - onClick, onChange
+
+87) React-Fiber - Its break down the rendering into smaller parts and also Improved Asynchronous Rendering.
+
+88)<button onClick={handleClick}></button>
+   <button onClick={()=> handleClick()}></button> - We use this for , suppose we have to paas any arguments with the function.
+
+89) Why the promise is run before the set timeout - Because the promise is micro task and setTimeout or setInterval is macro task , and macro task is always runs in the last.
+
+
+90) CI/CD - Azure - Continues Inegration , Continues Development
+
+91) DevOps -Jenkins ,Dockers, Azure - 
+
+92) ES5 - map , filter , reduce , forEach, JSON.parse, JSON.stringify , ES7 - Includes, ES8 - Async/await, Object.values , entries
+
+93) Saga and Thunk - Middleware use for mostly API Calling from Action  - Saga takes the data from action and then move to reducer side, Suppose our data is commign late from API 
+
+94) Implicit - Automatic Action , Explicit - Koi chiz hum define krne k baad chale
+
+95) LocalStorage , SessionStorage , Cookies - Cookies is les storage capacity and clear after some time.
+
+96) Undefined, Null, Not Defined - When a variable is declared but not assigned, Empty Value, variable that has not been declared or is not in the current scope
+
+97) _proto_ and prototype - _proto_ is use for any object or array proto and prototype is use for constructor function
+
+98) example of imutable object - const person = {
+  name: "John",
+  age: 30,
+};
+person.name = "Jane";
+
+99) can we have multiple store in reducx - No, Redux typically follows a single store pattern. 
+
+100) Pure function - same output for the same input and has no side effects.
+
+101) delete keyword works only for some key in object 
+
+102) Json Web Token - Its use for Authentication, Authorization, for Multiple User Login Case
+
+103) Rem Em and Px = Suppose we have parenrt size 10px and after that we gave 2rem so its 20px and default size is 16px
+Rem refer to the parent and em is refer to the nearest container.
+
+
+const myNumber = [1,5,6,3,2,7,8,2,5,3];
+Find Repeted Value
+React functionality - Add Delete , 2 data Changes with 1 state and 1 function
+
+
 
 
 const a =[ 4,5,6,7,4,8,9,7]
 output [[4,4], [5], [6], [7,7] [8], [9] ]
 
-const arr = [ 1,1,2,3,1,4]
-output = { 1:3, 2:1}, 3:2
-
-wrire the pollyfill for map and foreach - suppose koi browker koi functionality suport nhi krata then uss time pe hum pollyfil usew krte hai
+reverse string                     +
 write the logic to move all 0 move to end of the array
-
-restting and normalizing
+missign number from array
+count multple strign              +
+find second highest value from array    + 
+print nested array to noraml aaray     
+find the duplicated number from array  

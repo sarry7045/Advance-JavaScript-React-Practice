@@ -12,6 +12,32 @@
   background: red;
 }
 
+
+.containerr h1{
+  display: inline-block;
+  background-color: red;
+  font-size: 10px;
+  height: 100px;
+  width: 100px;
+  outline: 10px black solid;
+  margin: 20px;
+}
+
+.maindiv{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.mainchild{
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+
 .container {
   font-style: italic;
   font-weight: bold;

@@ -376,12 +376,80 @@ const res = findValue(obj)
   
 
   
-  
-  
-  // Task 4
 
-  // Move all 0 to the end of the array 
-  // const numbers = [0, 2, 0, 5, 9, 0, 1];
+  
+  
+  //Print 0,1,2 with var keyword
+  for (var i = 0; i < 3; i++) {
+    (function(index) {
+      setTimeout(function() {
+        console.log(index);
+      }, index * 1000);
+    })(i);
+  }
+
+
+
+
+  function foo() {
+    var a = window.b = 10;
+    // be will be like window.b
+    a++
+    return a
+  }
+  foo()
+  console.log(typeof (a)) //undefined
+  console.log(typeof (b)) // number
+  
+
+  
+  const numberss = [1, 2, 3, 4, 5];
+  const summmm = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+
+  console.log(summmm);
+
+
+
+
+
+  // Move all 0 end of the Array
+  function moveZerosToEnd(array) {
+    let zeros = [];
+    let nonZeros = [];
+  
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] === 0) {
+        zeros.push(array[i]);
+      } else {
+        nonZeros.push(array[i]);
+      }
+    }
+  
+    return nonZeros.concat(zeros);
+  }
+  
+  const numbe = [0, 2, 0, 4, 0, 6, 0, 8];
+  const result = moveZerosToEnd(numbe);
+  
+  console.log(result); // Output: [2, 4, 6, 8, 0, 0, 0, 0]
+
+
+// Sum of even Number
+  let aarry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  function evenn(data) {
+    var sum = 0;
+    
+    for(var i =0; i<data.length; i++){
+        if(data[i] % 2 === 0){
+            sum += data[i]
+        }
+    }
+    return sum
+}
+
+console.log(evenn(aarry))
   
 
   

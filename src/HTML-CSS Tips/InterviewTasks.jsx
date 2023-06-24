@@ -1,5 +1,5 @@
 import React from "react";
-import "./CSSTricks.css"
+import "./CSSTricks.css";
 
 const InterviewTasks = () => {
   // FlipKart Basic Skeleton
@@ -18,6 +18,27 @@ const InterviewTasks = () => {
       {/* Center the dicv */}
       <div className="parent">
         <div className="child"></div>
+      </div>
+
+      {/* Inline Block Inline Block */}
+
+      <div className="containerr">
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+      </div>
+
+      {/* Responisve Div */}
+
+      <div className="maindiv">
+        <div className="mainchild"></div>
+        <div className="mainchild"></div>
+        <div className="mainchild"></div>
+        <div className="mainchild"></div>
+        <div className="mainchild"></div>
       </div>
     </>
   );

@@ -7,7 +7,8 @@ const CallApplyBind = () => {
 
   //jab bhi kisi object ko kisi function k sath attach krna hai , taki hum uskp reuse karr paye or uske features use karr paye
   
-
+  // Explicit Binding:
+  
   const callApppBind = function (address, room) {
     console.log(
       `Hello my name is ${this.name} and my roll no is ${this.roll} and i live in ${address} room ${room}`
@@ -40,6 +41,24 @@ const CallApplyBind = () => {
 
   const fx = checkName.bind(person);
   console.log(fx);
+
+
+
+
+
+  // Implicit Binding:
+
+  const personn = {
+    name: 'John',
+    greet: function() {
+      console.log(`Hello, ${this.name}!`);
+    }
+  };
+  
+  personn.greet(); // Output: Hello, John!
+
+
+
 
   return (
     <div>

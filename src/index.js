@@ -90,6 +90,8 @@ root.render(
 // Nullishing - ??
 // Always Create one route of Default page * 
 // Try to use useReducer if we need to create more hen 3 useState
+// pure comoponent
+// memorization
 
 
 // Social Media App
