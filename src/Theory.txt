@@ -269,12 +269,17 @@ person.name = "Jane";
 Rem refer to the parent and em is refer to the nearest container.
 
 
+
+
+
+
+
+
+
+
 const myNumber = [1,5,6,3,2,7,8,2,5,3];
 Find Repeted Value
 React functionality - Add Delete , 2 data Changes with 1 state and 1 function
-
-
-
 
 const a =[ 4,5,6,7,4,8,9,7]
 output [[4,4], [5], [6], [7,7] [8], [9] ]
@@ -285,4 +290,111 @@ missign number from array
 count multple strign              +
 find second highest value from array    + 
 print nested array to noraml aaray     
-find the duplicated number from array  
+find the duplicated number from array 
+
+const arr = [1, 2, 3, 4, 5, 7] 
+const arr1 = [5, 6, 7, 8, 9] 
+output - [1,2,3,4,6,8,9] Remove duplicate
+
+const string = "Hii My Name is Suraj"
+find longest String
+output - Suraj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HealthCare/Pharma
+
+Explore karna tha HealthCare
+
+Workk culture achaa tha. Growing Company, 500 ,1800
+ 
+Astraa - New Product
+
+My Name is Suraj Anil Yadav and i am from Mumbhai, andheri West, 
+and I Completd my BSCIT from mumbai university in 2020 , 
+and currently i am working in WealthDesk as Frontend Developer
+I have almost 3 years of experice in Frontend Domain,
+and My primary skills are JavaScript, TypeScript, ReactJs, NextJS, Redux, etc and OPen to learn new techonologies
+
+Yes i have on offer with one Company, But The company is far away from my house 
+
+
+Strenghrt - 
+Honest , 
+I always try to update my self with new techonologies
+Wide Range of Knowledge in Understanding the Business.
+
+
+ Why do leave that organization:
+
+
+Weakness - 
+I feel uncomfortable , when i am not able to complete my task on given time
+
+why hIire : Beacuse i have alreadcy worked in Multiple projects, How to work and how to deliver projects /tasks
+
+
+To keep mom and dad happy that's it
+
+
+They have just send me a comformaton mail and said rest of inforamtopn sich as SS and offial OL would be given on the date of joning 
+
+ I  would like to see my slef more maaturd , more acperice , and, Knowledge and responsible perosn in your compamy.
+
+ game-changing analytics solutions. 
