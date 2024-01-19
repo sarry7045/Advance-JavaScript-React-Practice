@@ -268,6 +268,20 @@ person.name = "Jane";
 103) Rem Em and Px = Suppose we have parenrt size 10px and after that we gave 2rem so its 20px and default size is 16px
 Rem refer to the parent and em is refer to the nearest container.
 
+104) Graph-QL - Suppose backend sending us 100 datas, but we need only 10 from that so that remaning 90 data's are 
+                unnecessary comming and it's takes unnecessary time and cost. Graph-QL send's only required data to Frontend.
+
+105) CI-CD (Jenkins-Azure Pipelines, Github Actions) - Supposes we deside one time for Deployment , 
+            so uss time pe hum users ko bol nhi sakte ki aap log ruko me deploy kar leta hu,
+            CI-CD techniq se hum user's k use krte krte bhi production pe deploy kar sakte hai.
+            CI-CD Tools build files ko he recheck krta hai , if usme kuch problem hua toh Build fail karr deta hai.
+
+106) Kubernetes - It's handle or manage the multiple container for Server
+
+107) Monolith vs MicroServices - One Big Project - Project with Small Small Parts
+
+108) Prometheus - It Gives the A to Z details of Our Server, Kitne der server chala kitne errors aaye n all
+
 
 
 
