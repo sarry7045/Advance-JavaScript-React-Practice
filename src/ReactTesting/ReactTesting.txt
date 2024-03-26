@@ -1,0 +1,36 @@
+npm run test (File name jo bhi specific file ka test krna hai)
+describe() - suppose group wise testing krna hua like UI ka alag test case and api wagera ka alag testcase , so dono ka group bana sakte hai with the use of describe 
+describe.skip() - so woh ye wale group ko ignore kr dega baki sab run kar dega
+describe.only() - so woh sirf issi group ko run karega bakiyo ko ignore kr dega
+
+fireEvent.change = for onChange    
+
+__tests__ - folder name - iske undar chahe kese bhi file name banao wo as a test case wala file he samjh    gea
+App.spec.jsx or js also fine
+
+beforeAll() - koi bhi funtion wagera chalana hua before testCase
+afterAll() - koi bhi funtion wagera chalana hua after testCase
+
+npm run coverage
+
+test("Function Test", =>{
+    expact(handleClick()).toMatch("Hello World")
+})
+
+getByRole is for semantic tags
+
+getAllByRole - is Array so suppose first wale me kuch cindition lagana hai so we have to use like thos buttons[1]
+for(let i=0; i<checkboxes.lenght i++){
+    expect(checkboxes[i]).toBeInTheDocument()
+}
+
+data-testid - getByTestId
+If we need to customize this id key to Elememnt-Id = configure({data-testid:"Element-Id"})
+
+
+
+
+
+
+
+codiumate AI for write test case
