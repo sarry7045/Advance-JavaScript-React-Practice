@@ -28,9 +28,31 @@ data-testid - getByTestId
 If we need to customize this id key to Elememnt-Id = configure({data-testid:"Element-Id"})
 
 
+Negative - expect(btn).not.toHaveClass("btn")
+
+test("", ()=>{
+    render=(<App/>)
+    const div = screen.getByText("Hello World", {expact:false}) ----- Agar hamra text exact same nhi hai tab , like if its in Capital Case n all
+    const div = screen.getByText(/"Hello World"/i) ----- Agar hamra text exact same nhi hai tab , isme abb dynamic values bhi daal sakte hai
+    expect(div).toBeInTheDocument
+})
+
+Diffrece between getByText and queryByText - queryByText used when we use ternory opeatpr like {true && <h1>Login</h1> : <h1>Logout</h1>} - Ye search krta hai code k under amd getByText Search krta hai sirf present text ko
+findByText - if koi chiz kuch time baad aa rahi hai or kuch time baad true ho rahi hai tab hum use krr sakte hai - const div = await screen.getByText("Hello World", {}, {timeout: 4000})
+
+within(el) - Means suppose div k under <h1>Hii</h1> ye keyword hona he chahiye
+
+Diffrece between userEvent and FireEvent - userEvent is a async call
+userEvent.setup()
+await userEvent.type(btn, "Hello")
+
+act function - Pehle state ko update krta hai then assert krta hai  and yeh bhi async hota hai
+
+Jab kisi component me hum function as props pass krte hai - const testFunction = jest.fn() - render(<App testFunction={testFunction}/>)
 
 
+debug(), console.log(prettyDOM(container)), logRules(container) - for UI Debugging
 
-
-
+MSW
+Testing Playground - Best Chrome Extention for Testing
 codiumate AI for write test case
