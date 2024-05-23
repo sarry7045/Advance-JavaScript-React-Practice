@@ -1,8 +1,6 @@
-import React from 'react'
+import React from "react";
 
 const InterviewTypeQuestions = () => {
-
-
   // Unique Value from Array
   const array = [1, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 9, 9, 2, 2, 2, 6, 6];
   const uniqueNumber = [...new Set(array)];
@@ -11,73 +9,66 @@ const InterviewTypeQuestions = () => {
 
 
 
-
   // Multiple array in one array and soting and remove duplicate data from array
-  const array1 = [1, 3, 4 ,5, 5]
-  const array2 = [2, 4, 4, 6, 8]
-  const array3 = [...array1, ...array2]
+  const array1 = [1, 3, 4, 5, 5];
+  const array2 = [2, 4, 4, 6, 8];
+  const array3 = [...array1, ...array2];
 
-  const sorted = array3.sort((a, b) => a - b)
-  const removeDuplicate = [...new Set(sorted)]
-    console.log("sorted", removeDuplicate)
+  const sorted = array3.sort((a, b) => a - b);
+  const removeDuplicate = [...new Set(sorted)];
+  console.log("sorted", removeDuplicate);
 
 
 
-    // Add The Total Of Array
-    const numbers = [1, 2, 3, 4, 5]
-    let sum = 0
-    numbers.forEach((item) => {
-        sum += item
-    })
-    console.log("sum", sum)
-  
+  // Add The Total Of Array
+  const numbers = [1, 2, 3, 4, 5];
+  let sum = 0;
+  numbers.forEach((item) => {
+    sum += item;
+  });
+  console.log("sum", sum);
+
 
 
   // Multiple The Array from this Index Number
-  const ArrayNumbers = [1, 2, 3, 4, 5]
+  const ArrayNumbers = [1, 2, 3, 4, 5];
   const Multipley = ArrayNumbers.map((item, index) => {
-    return item * index
-  })
-  console.log("Multipley", Multipley)
-  
-
+    return item * index;
+  });
+  console.log("Multipley", Multipley);
 
   // From one Array of Object Create one another array of Object using that array of Object
   const products = [
     {
       name: "Laptop",
       price: 10000,
-      count: 5
+      count: 5,
     },
     {
       name: "Mobile",
       price: 5000,
-      count: 3
+      count: 3,
     },
     {
       name: "Desktop",
       price: 20000,
-      count: 2
+      count: 2,
     },
-  ]
+  ];
   const totoalProductValue = products.map((item) => {
     return {
-      name: item.name, totalValue: item.price * item.count
-    }
-  })
-  console.log("totoalProductValue", totoalProductValue)
-  
-
+      name: item.name,
+      totalValue: item.price * item.count,
+    };
+  });
+  console.log("totoalProductValue", totoalProductValue);
 
   // Remove Duplicate Number from Array using Filter Mehthod
-  const Arr = [1, 2, 3, 3, 4, 5, 6, 6, 6]
-  const filterDuplicate = Arr.filter((item , index, arr) => {
-    return arr.indexOf(item) === index
-  })
-  console.log("filterDuplicate", filterDuplicate)
-  
-
-
+  const Arr = [1, 2, 3, 3, 4, 5, 6, 6, 6];
+  const filterDuplicate = Arr.filter((item, index, arr) => {
+    return arr.indexOf(item) === index;
+  });
+  console.log("filterDuplicate", filterDuplicate);
 
   // Add the total value of all product with there count
   // const store = [
@@ -103,96 +94,80 @@ const InterviewTypeQuestions = () => {
   //     0
   // })
   // console.log("totalValue", totalValuee)
-  
-
-
 
   // sort the numbers
-  const sortingArray = [72, 16, 2, 6, 34, 44, 17]
-  sortingArray.sort((a,b) => {
-    return a - b
-  })
-  console.log("sortingArray", sortingArray)
-  
+  const sortingArray = [72, 16, 2, 6, 34, 44, 17];
+  sortingArray.sort((a, b) => {
+    return a - b;
+  });
+  console.log("sortingArray", sortingArray);
+
 
 
   // Replace name with other name
-  const names = ["Neeraj", "Suraj", "Allu"]
-  const idx = names.indexOf["Aditya"]
-  console.log("idx", idx)
-
+  const names = ["Neeraj", "Suraj", "Allu"];
+  const idx = names.indexOf["Aditya"];
+  console.log("idx", idx);
 
 
 
   // Print numbers in 1 by 1
-for (let a = 0; a <= 5; a++){
-  setTimeout(() => {
-    console.log("Number",a)
-  }, a * 1000);
-}
-  
-    
-
-    // checkArray
-    const checkArray = [1, 2, 3, 4, 5]
-  console.log("checkArray", Array.isArray(checkArray))
-  
+  for (let a = 0; a <= 5; a++) {
+    setTimeout(() => {
+      console.log("Number", a);
+    }, a * 1000);
+  }
 
 
 
+  // checkArray
+  const checkArray = [1, 2, 3, 4, 5];
+  console.log("checkArray", Array.isArray(checkArray));
 
   // NAN
   let a = 10;
   // let b = "10"
-  let c = "String"
-  let d = a / c
-  console.log("NAN", d)
+  let c = "String";
+  let d = a / c;
+  console.log("NAN", d);
   // Becuase koi bhi number kisi string se devide nhi ho sakta
 
 
 
-  
   // Find smallest and largest number
-  const arry = [2, 23, 65, 3, 43]
-  arry.reduce((accum, num) => Math.min(accum, num))
-  console.log("Small Number", arry)
-  
+  const arry = [2, 23, 65, 3, 43];
+  arry.reduce((accum, num) => Math.min(accum, num));
+  console.log("Small Number", arry);
 
-  let pattern = "/xyz"
-  let value = "This is XYZ test"
-  console.log("Valueee", value.replace(pattern, "just"))
-
+  let pattern = "/xyz";
+  let value = "This is XYZ test";
+  console.log("Valueee", value.replace(pattern, "just"));
 
 
 
   // Block scope and Global Scope
-  var x = 10 
+  var x = 10;
   if (true) {
-    // var x = 5 
-    console.log(x)
+    // var x = 5
+    console.log(x);
     // when let insted of var answer is 10
   }
   // x = 5
   function summ() {
-    var x = 9
-    console.log(x)
+    var x = 9;
+    console.log(x);
   }
-  summ()
+  summ();
   // 10
 
-
-
-
   let aa = 0;
-alert( Boolean(aa) ); 
-// false
-let bb = "0";
-alert( Boolean(bb) ); 
-// true
-alert(aa === bb); 
-// true!
-
-
+  alert(Boolean(aa));
+  // false
+  let bb = "0";
+  alert(Boolean(bb));
+  // true
+  alert(aa === bb);
+  // true!
 
   // null === undefined
   //false
@@ -200,21 +175,15 @@ alert(aa === bb);
   // true
   // === check the type and == is check only value
 
-
-
   // null + 1      // 1
   // undefined + 1    // NAN
 
-
-
-  alert( null > 0 );  // (1) false
-  alert( null == 0 ); // (2) false
+  alert(null > 0); // (1) false
+  alert(null == 0); // (2) false
   alert(null >= 0); // (3) true
-  alert( undefined > 0 ); // false (1)
-  alert( undefined < 0 ); // false (2)
+  alert(undefined > 0); // false (1)
+  alert(undefined < 0); // false (2)
   alert(undefined === 0); // false (3)
-  
-
 
   // Function Declaration
   // function summm(a, b) {
@@ -226,8 +195,6 @@ alert(aa === bb);
   //   return a + b;
   // };
 
-
-
   let obectt1 = {};
   let object2 = {}; // two independent objects
   alert(obectt1 === object2); // false
@@ -235,99 +202,86 @@ alert(aa === bb);
 
 
 
-
-
   // Print secondLast Element
-  const arr = ["First","Second","Third","Fourth","Fifth"]
-  console.log(arr.at(-4))
+  const arr = ["First", "Second", "Third", "Fourth", "Fifth"];
+  console.log(arr.at(-4));
 
 
 
-  
-let arryy = [1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
-//   Print Only 5 Numbers
-arryy.length = 5
-console.log(arryy)
+  let arryy = [1, 2, 2, 3, 4, 5, 6, 7, 8, 9];
+  //   Print Only 5 Numbers
+  arryy.length = 5;
+  console.log(arryy);
 
-// Sum of array 
+  // Sum of array
 
-let summm = arryy.reduce((x,y)=> x + y)
-console.log(summm)
+  let summm = arryy.reduce((x, y) => x + y);
+  console.log(summm);
 
-// Unique Value
-let unique = new Set(arryy)
-console.log([...unique])
+  // Unique Value
+  let unique = new Set(arryy);
+  console.log([...unique]);
 
-let xx = 30 , y = 40
-// Swap the value
-[xx,y] = [y,xx]
-  console.log(x, y)
-  
+  let xx = 30,
+    y = ((40)[
+      // Swap the value
+      (xx, y)
+    ] = [y, xx]);
+  console.log(x, y);
 
-
-// Guess the output
-  let data = "size"
+  // Guess the output
+  let data = "size";
   const bird = {
-    size:"Small"
-  }
-console.log(bird[data]) //Small
-console.log(bird["size"]) //Small
-console.log(bird.size) //Small
-  console.log(bird.data) //Undefined
-  
-
+    size: "Small",
+  };
+  console.log(bird[data]); //Small
+  console.log(bird["size"]); //Small
+  console.log(bird.size); //Small
+  console.log(bird.data); //Undefined
 
   //Guess the result
   const objj = {
-    a:"suraj",
-    b:"Neeraj",
-    a:"yadav"
-}
-  console.log(objj) //{ a: 'yadav', b: 'Neeraj' }
-  
+    a: "suraj",
+    b: "Neeraj",
+    a: "yadav",
+  };
+  console.log(objj); //{ a: 'yadav', b: 'Neeraj' }
 
   // Type of
-  let dataa = 3+4+'5'
-  console.log(typeof dataa) //string
-  console.log(typeof 3 + 4 + "5") //number45 - Because first it give the type of 3 then normal print 45
-  
+  let dataa = 3 + 4 + "5";
+  console.log(typeof dataa); //string
+  console.log(typeof 3 + 4 + "5"); //number45 - Because first it give the type of 3 then normal print 45
 
   // Guess the output
-  function getInfo (valuee){
-    valuee.name = "Suraj"
-    }
-    const person ={
-        name:"Neeraj"
+  function getInfo(valuee) {
+    valuee.name = "Suraj";
   }
-  getInfo(person)
-  console.log(person) // Name :"Suraj"
+  const person = {
+    name: "Neeraj",
+  };
+  getInfo(person);
+  console.log(person); // Name :"Suraj"
   // and when we call the function bottom of console then the output is  Neeraj
 
-
-  
-  
-  
   const obj = {
-    name :"Suraj",
-    age:30
-}
+    name: "Suraj",
+    age: 30,
+  };
 
-function findValue(data){
- const objKeys = Object.keys(data)
- console.log(objKeys)
- 
- const res = objKeys.map((key)=>{
-     const value = data[key];
-     return [key,value]
- })
- return res
-}
+  function findValue(data) {
+    const objKeys = Object.keys(data);
+    console.log(objKeys);
 
-const res = findValue(obj)
-  console.log(res) //[ [ 'name', 'Suraj' ], [ 'age', 30 ] ]
-  
+    const res = objKeys.map((key) => {
+      const value = data[key];
+      return [key, value];
+    });
+    return res;
+  }
 
-    
+  const res = findValue(obj);
+  console.log(res); //[ [ 'name', 'Suraj' ], [ 'age', 30 ] ]
+
   // Task 1
   const input1 = { a: 1, b: 2, c: 3, d: 10, e: 12 };
   const input2 = { a: 2, b: 12, c: 6, d: 10 };
@@ -345,9 +299,7 @@ const res = findValue(obj)
     return obj;
   }
 
-    console.log(func(input1, input2));
-    
-
+  console.log(func(input1, input2));
 
   // Task 2
 
@@ -358,10 +310,7 @@ const res = findValue(obj)
   const revereseAray = spil
     .map((item) => item.split("").reverse().join(""))
     .join(" ");
-    console.log(revereseAray);
-
-    
-
+  console.log(revereseAray);
 
   // Task 3
 
@@ -373,44 +322,32 @@ const res = findValue(obj)
   }
 
   console.log(secondHighest(inputt));
-  
 
-  
-
-  
-  
   //Print 0,1,2 with var keyword
   for (var i = 0; i < 3; i++) {
-    (function(index) {
-      setTimeout(function() {
+    (function (index) {
+      setTimeout(function () {
         console.log(index);
       }, index * 1000);
     })(i);
   }
 
-
-
-
   function foo() {
-    var a = window.b = 10;
+    var a = (window.b = 10);
     // be will be like window.b
-    a++
-    return a
+    a++;
+    return a;
   }
-  foo()
-  console.log(typeof (a)) //undefined
-  console.log(typeof (b)) // number
-  
+  foo();
+  console.log(typeof a); //undefined
+  console.log(typeof b); // number
 
-  
   const numberss = [1, 2, 3, 4, 5];
   const summmm = numbers.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue;
-}, 0);
+    return accumulator + currentValue;
+  }, 0);
 
   console.log(summmm);
-
-
 
 
 
@@ -418,7 +355,7 @@ const res = findValue(obj)
   function moveZerosToEnd(array) {
     let zeros = [];
     let nonZeros = [];
-  
+
     for (let i = 0; i < array.length; i++) {
       if (array[i] === 0) {
         zeros.push(array[i]);
@@ -426,41 +363,129 @@ const res = findValue(obj)
         nonZeros.push(array[i]);
       }
     }
-  
+
     return nonZeros.concat(zeros);
   }
-  
+
   const numbe = [0, 2, 0, 4, 0, 6, 0, 8];
   const result = moveZerosToEnd(numbe);
-  
+
   console.log(result); // Output: [2, 4, 6, 8, 0, 0, 0, 0]
 
 
-// Sum of even Number
+
+  // Sum of even Number
   let aarry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   function evenn(data) {
     var sum = 0;
-    
-    for(var i =0; i<data.length; i++){
-        if(data[i] % 2 === 0){
-            sum += data[i]
-        }
+
+    for (var i = 0; i < data.length; i++) {
+      if (data[i] % 2 === 0) {
+        sum += data[i];
+      }
     }
-    return sum
-}
+    return sum;
+  }
+  console.log(evenn(aarry));
 
-console.log(evenn(aarry))
-  
+
+
+  // Write a function find Longest Word that makes a string as input and returns the logest word in the string. If there are multiple longest words, return the first one encountered.
+  const LongestWord = (str) => {
+    if (str.trim().length === 0) {
+      return false;
+    }
+    let strArr;
+    strArr = str.split(" ");
+    strArr = strArr.sort((a, b) => a.length - b.length);
+    return strArr.at(-1);
+  };
+  console.log(LongestWord("Watch Suraj Yadav JavaScript Course on Youtube")); //JavaScript
+
 
   
-  
-  
-  
+  // Write the function to add the # on Starting of string and alos need all the first letter of sentence is Capital
+    const generateHash  = (str) => {
+      if(str.trim().length === 0) {
+        return false;
+      }
+      str = str.split(" ")
+      str = str.map((curElem)=> curElem.replace(curElem[0], curElem[0].toUpperCase()));
+      // str = str.map((curElem)=> curElem.charAt(0).toUpperCase() + curElem.slice(1));      - Seocond way
+      str = `#${str.join(" ")}`
+      return str
+    }
+    console.log(generateHash("my name is suraj yadav"))
+
+
+
+    // Write the fucntion for count the Repeating character length
+    const countChar = (word, char) =>{
+      word = word.toLowerCase();
+      char = char.toLowerCase();
+      word = word.split("").reduce((accum, cutElem)=> {
+        if(cutElem ===  char) {
+          accum++
+        }
+        return accum
+       }, 0)
+       return word
+      }
+     console.log(countChar("MissIssippi", "I"))
+
+
+
+     // Wrire the function for palindrome or not.
+     const idPalindrome =  (str) => {
+    str = str.toLowerCase()
+    let reverseStr = str.split("").reverse().join("");
+    return str === reverseStr ? true : false
+  }
+    console.log(idPalindrome("racecar"))
+    console.log(idPalindrome("hello"))
+
+
+    
+    //Factorial
+    const factorial = (num) => {
+      let fact = 1
+      for (let i = 1; i<=num; i++){
+          fact = fact * i
+          
+      }
+      return fact
+     }
+     console.log(factorial(3))
+     console.log(factorial(5))
+
+
+    
+     //calculateTotalAverage
+     const calculateTotalAverage = (arr) =>{
+      let total = arr.reduce((accum, curElem)=> accum + curElem,0)
+      return total / arr.length 
+     }
+     console.log(calculateTotalAverage([5,3,2,8]))
+
+
+     
+     //arrayAreEqual
+     const arrayAreEqual = (arr1, arr2) => {
+      if(arr1.length !== arr2.length){
+          return false;
+          }
+      return arr1.every((curElem, index)=> curElem === arr2[index] )
+      }  
+      console.log(arrayAreEqual([1,2,3], [1,2,3]))
+      console.log(arrayAreEqual([1,2,3], [1,2,4]))
+
+
+
   return (
     <div>
       <h4>InterviewTypeQuestions</h4>
     </div>
-  )
-}
+  );
+};
 
-export default InterviewTypeQuestions
+export default InterviewTypeQuestions;
