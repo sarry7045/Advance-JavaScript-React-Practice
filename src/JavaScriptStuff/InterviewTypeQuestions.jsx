@@ -479,6 +479,53 @@ const InterviewTypeQuestions = () => {
       console.log(arrayAreEqual([1,2,3], [1,2,3]))
       console.log(arrayAreEqual([1,2,3], [1,2,4]))
 
+      
+      
+      
+// console.log(SumOfNumber(1234))
+
+
+
+const removeDuplicatee = (arr) => {
+    const newArr = [...new Set(arr)];
+    return newArr
+}
+console.log(removeDuplicatee([1,2,3,1,2,4,5]))
+
+
+
+const countVomels = (str) => {
+    let vomels = ["a", "e" , "i", "o", "u"]
+    let arr = str.split("")
+    let count = 0;
+    for(let char of arr){
+        if(vomels.includes(char.toLowerCase())){
+            count ++
+        }
+    }
+    return count
+}
+console.log(countVomels("Helloo world"))
+
+
+
+const findMin = (arr) => {
+    arr = arr.sort((a,b) => {
+        if(b > a) return - 1
+    })
+    // or Math.min(...arr)
+    return arr[0]
+}
+console.log(findMin([1.2,-3,0,-6]))
+
+
+
+const startsWith = (str, subStr) =>{
+  return str.toLowerCase().startsWith(subStr.toLowerCase());
+}
+console.log(startsWith("Hello World", "hello"))
+console.log(startsWith("Hello World", "World"))
+
 
 
   return (
