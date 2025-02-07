@@ -20,7 +20,7 @@ const UseeRef = () => {
     <div>
       {number}
       <button onClick={handleClick}>Increment Number</button>
-
+      
       {countClick.current}
       <input type="text" ref={inputValue} />
     </div>

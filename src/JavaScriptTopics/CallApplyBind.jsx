@@ -5,7 +5,7 @@ const CallApplyBind = () => {
   // uske liye hum call apply or bind use krr sakte hai
 
 
-  //jab bhi kisi object ko kisi function k sath attach krna hai , taki hum uskp reuse karr paye or uske features use karr paye
+  //jab bhi kisi object ko kisi function k sath attach krna hai , taki hum usko reuse karr paye or uske features use karr paye
   
   // Explicit Binding:
   

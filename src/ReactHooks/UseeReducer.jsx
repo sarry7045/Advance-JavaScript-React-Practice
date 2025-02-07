@@ -19,8 +19,8 @@ const UseeReducer = () => {
     <div>
       <h4>useReducer Hook</h4>
       {count}
-      <button onClick={dispatch("Increment")}> Increment </button>
-      <button onClick={dispatch("Decrement")}>Decrement </button>
+      <button onClick={dispatch("Increment")}>Increment</button>
+      <button onClick={dispatch("Decrement")}>Decrement</button>
     </div>
   );
 };

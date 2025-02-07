@@ -8,7 +8,7 @@ const HtmlCssTheory = () => {
   //     .test {color: green;}
   //     p {color: red;}
   //   </style>
-  // </head>
+  // </head
   // <body>
   // <p id="demo" class="test" style="color: pink;">Hello World!</p >
   // </body>

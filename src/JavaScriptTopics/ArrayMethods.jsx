@@ -199,7 +199,7 @@ const ArrayMethods = () => {
   const array = [1, 2, 3, 4, 5]
   console.log(array.splice(1, 1, 9))
   console.log(array)
-
+  // It's use for Adding the aaray values
 
 
     return <div>{Itemsmapp}</div>;

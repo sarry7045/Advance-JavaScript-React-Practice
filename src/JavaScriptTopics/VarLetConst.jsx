@@ -5,7 +5,7 @@ const VarLetConst = () => {
   // let and const is block
 
   // let can't support redeclaration but its support Re-Assignment
-  // var can't support redeclaration and  Re-Assignment
+  // const can't support redeclaration and  Re-Assignment
     
     var a = 5;
     console.log(a) //5

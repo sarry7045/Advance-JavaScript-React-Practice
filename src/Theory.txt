@@ -8,7 +8,8 @@
 4) Diffrence Between Promise and async await = Basicallly it's 90% same but, in async/await its wait for the response, when its resolve then it move forward,
    main diffrence is the execution of code.
 
-5) Event Loop - Its checking the callStack everytime , when the callstack is empty , it will take code from task queue and put inside the call stack. 
+
+5) Event Loop - Its checking the callStack  everytime , when the callstack is empty , it will take code from task queue and put inside the call stack. 
 
 6) memoization - Here's a simplified explanation of memoization:
 When a function is called with certain inputs, the memoization technique checks if the function has already been called with the same inputs before.
