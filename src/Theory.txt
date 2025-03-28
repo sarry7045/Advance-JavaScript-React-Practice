@@ -283,9 +283,17 @@ Rem refer to the parent and em is refer to the nearest container.
 
 108) Prometheus - It Gives the A to Z details of Our Server, Kitne der server chala kitne errors aaye n all
 
+109) any vs unknwon - unknwon is a stricter version of any , we cannot change it directly we have to check it's type like - if(typeOf abc === number){abc ++} like this
 
+110) type vs interface type user = { name: String }  type user = { rollNo: number} in interface we cannot reuse like this
 
+111) e.preventDefault - it's use for to stop the Defalt behvior of brower like if submit the form after form submit its refresh the page and remove all the input values, so the solution is this for it
 
+112) event.stopPropogation - to stop the event Bubbling
+
+113) compomnentWillUnmount -  Jab bhi hamara compomnent DOM se remove hoga
+
+114) difference between callback promise and async await - callBack problem is ki callBack k undar aur callback ho sakte hai, then in promise the problm is then k undar aur then ho sakte hai, but in async it can await for the response
 
 const myNumber = [1,5,6,3,2,7,8,2,5,3];
 Find Repeted Value

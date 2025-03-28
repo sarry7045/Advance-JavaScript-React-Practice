@@ -25,7 +25,7 @@ const UseeMemo = () => {
       <p>{add}</p>
       <br />
       <button onClick={() => setSub(sub - 1)}>Subsctraction</button>
-      <p> {sub}</p>
+      <p>{sub}</p>
     </div>
   );
 };
